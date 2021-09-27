@@ -1,0 +1,6 @@
+G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj|8f0a6f4e-dd52-40cd-b399-14c9c1682b86
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b42ad974-fa52-4db6-b0c5-0a56925d7382
+C:\Users\simhj\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|0a800be9-5dc5-46ac-ac78-699e12ca6b88
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5f2b8d4f-c425-443d-8c66-8a073aaf4ce1
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|67e589fb-fa57-4820-8d91-3c606235dae8
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|3b58b5b5-9221-4ad1-b07e-615b94ef04f4

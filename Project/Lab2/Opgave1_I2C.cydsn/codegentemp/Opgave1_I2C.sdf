@@ -1,0 +1,14 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2021-09-27T13:44:43Z")
+ (DESIGN "Opgave1_I2C")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.4")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "Opgave1_I2C")
+  (INSTANCE *)
+ )
+)

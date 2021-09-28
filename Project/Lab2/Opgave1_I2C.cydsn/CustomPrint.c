@@ -16,31 +16,43 @@
 #include "CustomPrint.h"
 #include <stdio.h>
     //prints a sring followed by a interger number 
-void PrintStringInt(char string[], uint8_t strLen, uint8_t number)
+void PrintStringInt(char str[], uint8_t len, uint8_t num)
 {
-    char conChar[5] = {": %d"}, str[strLen+4], buffer[255]; 
-    uint8_t i = 0;
-    for (i = 0; i < strLen; i++)
-    {
-        str[i] = string[i];
-    }
-    for (i = strLen; i < strLen+4; i++)
-    {
-        str[i] = conChar[i - strLen];
-    }
-    
-    snprintf(buffer, sizeof(buffer), str, number);
+	char buffer[255], string[255] = { "" }, conchar[8] = { ": %d\r\n" };
+	uint8_t i = 0; 
+	for (i = 0; i < len; i++)
+	{
+		string[i] = str[i]; 
+	}
+	for (i = len; i < len+8; i++)
+	{
 
+		string[i] = conchar[i-len];
+	}
+	snprintf(buffer, sizeof(buffer), string, num);
+    
+    UART_CT_PutString(buffer);
 return;
 }
 
-
-
-
-
-
     //prints a string followed by a float type number
-void PrintStringFloat(char string[], uint8_t strLen, float number); 
+void PrintStringFloat(char str[], uint8_t len, float num)
+{
+	char buffer[255], string[255] = { "" }, conchar[8] = { ": %f\r\n" };
+	uint8_t i = 0; 
+	for (i = 0; i < len; i++)
+	{
+		string[i] = str[i]; 
+	}
+	for (i = len; i < len+8; i++)
+	{
 
+		string[i] = conchar[i-len];
+	}
+	snprintf(buffer, sizeof(buffer), string, num);
+    
+    UART_CT_PutString(buffer);
+    return;   
+}
 
 /* [] END OF FILE */

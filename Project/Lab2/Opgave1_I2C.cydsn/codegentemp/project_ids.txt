@@ -1,0 +1,7 @@
+C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj|5e684d2f-88e1-41b4-8a0d-fb92dd43232d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|da6e4748-a0b5-4b4d-92e8-6ba28fb45a9e
+C:\Users\mathias\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|7cb72925-e19e-403f-b2a0-d9c9b7c4fa14
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|6e2b54ba-9cc1-40b7-9e6f-2ec88da8a7be
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ee850030-d2d3-46ce-a070-a38c26de3873
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d9e29856-ea33-4f0d-b555-ea6b4ebec99c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc3\AnalogDevice\PSoC35AnalogDevice.cylib\PSoC35AnalogDevice.cyprj|9dbb7472-2007-4aac-abeb-be9217cefefe

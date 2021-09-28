@@ -1,0 +1,980 @@
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.UART_Rx_CT_Handeler,"ax",%progbits
+  20              		.align	2
+  21              		.global	UART_Rx_CT_Handeler
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	UART_Rx_CT_Handeler, %function
+  25              	UART_Rx_CT_Handeler:
+  26              	.LFB64:
+  27              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** //interubt service rutines prototypes 
+  15:main.c        **** CY_ISR_PROTO (UART_Rx_CT_Handeler);
+  16:main.c        **** 
+  17:main.c        **** int main(void)
+  18:main.c        **** {
+  19:main.c        ****     UART_CT_PutString("Program started!\r\n");
+  20:main.c        ****     //interrubt enablers! 
+  21:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  22:main.c        ****     isr_UART_CT_StartEx(UART_Rx_CT_Handeler);
+  23:main.c        ****     
+  24:main.c        ****     //componet enables 
+  25:main.c        ****     UART_CT_Start();
+  26:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  27:main.c        **** 
+  28:main.c        ****     for(;;)
+  29:main.c        ****     {
+  30:main.c        ****         /* Place your application code here. */
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 2
+
+
+  31:main.c        ****     }
+  32:main.c        **** }
+  33:main.c        **** 
+  34:main.c        **** // interubt services rutines 
+  35:main.c        **** 
+  36:main.c        **** 
+  37:main.c        **** CY_ISR (UART_Rx_CT_Handeler)
+  38:main.c        **** {
+  28              		.loc 1 38 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32 0000 38B5     		push	{r3, r4, r5, lr}
+  33              		.cfi_def_cfa_offset 16
+  34              		.cfi_offset 3, -16
+  35              		.cfi_offset 4, -12
+  36              		.cfi_offset 5, -8
+  37              		.cfi_offset 14, -4
+  39:main.c        ****     uint8_t numberOfBytes = UART_CT_GetRxBufferSize();
+  38              		.loc 1 39 0
+  39 0002 FFF7FEFF 		bl	UART_CT_GetRxBufferSize
+  40              	.LVL0:
+  41 0006 0546     		mov	r5, r0
+  42              	.LVL1:
+  43              	.LBB2:
+  40:main.c        ****     
+  41:main.c        ****     for (uint8_t i = 0; i < numberOfBytes; i++)
+  44              		.loc 1 41 0
+  45 0008 0024     		movs	r4, #0
+  46 000a 0EE0     		b	.L2
+  47              	.LVL2:
+  48              	.L6:
+  49              	.LBB3:
+  42:main.c        ****     {
+  43:main.c        ****         char c = UART_CT_GetChar();
+  50              		.loc 1 43 0
+  51 000c FFF7FEFF 		bl	UART_CT_GetChar
+  52              	.LVL3:
+  44:main.c        ****         
+  45:main.c        ****         // takes actions based on input. 
+  46:main.c        ****         switch (c)
+  53              		.loc 1 46 0
+  54 0010 7428     		cmp	r0, #116
+  55 0012 03D1     		bne	.L7
+  47:main.c        ****         {
+  48:main.c        ****             case 't' :             
+  49:main.c        ****             {
+  50:main.c        ****                 UART_CT_PutString("test!\r\n");
+  56              		.loc 1 50 0
+  57 0014 0648     		ldr	r0, .L9
+  58              	.LVL4:
+  59 0016 FFF7FEFF 		bl	UART_CT_PutString
+  60              	.LVL5:
+  51:main.c        ****             }
+  52:main.c        ****             break;
+  61              		.loc 1 52 0
+  62 001a 04E0     		b	.L5
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 3
+
+
+  63              	.LVL6:
+  64              	.L7:
+  53:main.c        ****             default:                
+  54:main.c        ****             {
+  55:main.c        ****                 UART_CT_PutChar(c);
+  65              		.loc 1 55 0
+  66 001c FFF7FEFF 		bl	UART_CT_PutChar
+  67              	.LVL7:
+  56:main.c        ****                 UART_CT_PutString("\r\n");
+  68              		.loc 1 56 0
+  69 0020 0448     		ldr	r0, .L9+4
+  70 0022 FFF7FEFF 		bl	UART_CT_PutString
+  71              	.LVL8:
+  72              	.L5:
+  73              	.LBE3:
+  41:main.c        ****     {
+  74              		.loc 1 41 0 discriminator 2
+  75 0026 0134     		adds	r4, r4, #1
+  76              	.LVL9:
+  77 0028 E4B2     		uxtb	r4, r4
+  78              	.LVL10:
+  79              	.L2:
+  41:main.c        ****     {
+  80              		.loc 1 41 0 is_stmt 0 discriminator 1
+  81 002a AC42     		cmp	r4, r5
+  82 002c EED3     		bcc	.L6
+  83              	.LBE2:
+  57:main.c        ****             }
+  58:main.c        ****             break;
+  59:main.c        ****         }
+  60:main.c        ****     }
+  61:main.c        **** } // end of uart handeler
+  84              		.loc 1 61 0 is_stmt 1
+  85 002e 38BD     		pop	{r3, r4, r5, pc}
+  86              	.LVL11:
+  87              	.L10:
+  88              		.align	2
+  89              	.L9:
+  90 0030 00000000 		.word	.LC0
+  91 0034 08000000 		.word	.LC1
+  92              		.cfi_endproc
+  93              	.LFE64:
+  94              		.size	UART_Rx_CT_Handeler, .-UART_Rx_CT_Handeler
+  95              		.section	.text.main,"ax",%progbits
+  96              		.align	2
+  97              		.global	main
+  98              		.thumb
+  99              		.thumb_func
+ 100              		.type	main, %function
+ 101              	main:
+ 102              	.LFB63:
+  18:main.c        ****     UART_CT_PutString("Program started!\r\n");
+ 103              		.loc 1 18 0
+ 104              		.cfi_startproc
+ 105              		@ Volatile: function does not return.
+ 106              		@ args = 0, pretend = 0, frame = 0
+ 107              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 4
+
+
+ 108 0000 08B5     		push	{r3, lr}
+ 109              		.cfi_def_cfa_offset 8
+ 110              		.cfi_offset 3, -8
+ 111              		.cfi_offset 14, -4
+  19:main.c        ****     //interrubt enablers! 
+ 112              		.loc 1 19 0
+ 113 0002 0548     		ldr	r0, .L14
+ 114 0004 FFF7FEFF 		bl	UART_CT_PutString
+ 115              	.LVL12:
+  21:main.c        ****     isr_UART_CT_StartEx(UART_Rx_CT_Handeler);
+ 116              		.loc 1 21 0
+ 117              		.syntax unified
+ 118              	@ 21 "main.c" 1
+ 119 0008 62B6     		CPSIE   i
+ 120              	@ 0 "" 2
+  22:main.c        ****     
+ 121              		.loc 1 22 0
+ 122              		.thumb
+ 123              		.syntax unified
+ 124 000a 0448     		ldr	r0, .L14+4
+ 125 000c FFF7FEFF 		bl	isr_UART_CT_StartEx
+ 126              	.LVL13:
+  25:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+ 127              		.loc 1 25 0
+ 128 0010 FFF7FEFF 		bl	UART_CT_Start
+ 129              	.LVL14:
+ 130              	.L12:
+ 131 0014 FEE7     		b	.L12
+ 132              	.L15:
+ 133 0016 00BF     		.align	2
+ 134              	.L14:
+ 135 0018 0C000000 		.word	.LC2
+ 136 001c 00000000 		.word	UART_Rx_CT_Handeler
+ 137              		.cfi_endproc
+ 138              	.LFE63:
+ 139              		.size	main, .-main
+ 140              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 141              		.align	2
+ 142              	.LC0:
+ 143 0000 74657374 		.ascii	"test!\015\012\000"
+ 143      210D0A00 
+ 144              	.LC1:
+ 145 0008 0D0A00   		.ascii	"\015\012\000"
+ 146 000b 00       		.space	1
+ 147              	.LC2:
+ 148 000c 50726F67 		.ascii	"Program started!\015\012\000"
+ 148      72616D20 
+ 148      73746172 
+ 148      74656421 
+ 148      0D0A00
+ 149              		.text
+ 150              	.Letext0:
+ 151              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 152              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 153              		.file 4 "Generated_Source\\PSoC5/UART_CT.h"
+ 154              		.file 5 "Generated_Source\\PSoC5/isr_UART_CT.h"
+ 155              		.file 6 "Generated_Source\\PSoC5/core_cm3.h"
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 5
+
+
+ 156              		.section	.debug_info,"",%progbits
+ 157              	.Ldebug_info0:
+ 158 0000 F7010000 		.4byte	0x1f7
+ 159 0004 0400     		.2byte	0x4
+ 160 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 161 000a 04       		.byte	0x4
+ 162 000b 01       		.uleb128 0x1
+ 163 000c CA000000 		.4byte	.LASF25
+ 164 0010 0C       		.byte	0xc
+ 165 0011 F5010000 		.4byte	.LASF26
+ 166 0015 0A000000 		.4byte	.LASF27
+ 167 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 168 001d 00000000 		.4byte	0
+ 169 0021 00000000 		.4byte	.Ldebug_line0
+ 170 0025 02       		.uleb128 0x2
+ 171 0026 01       		.byte	0x1
+ 172 0027 06       		.byte	0x6
+ 173 0028 46020000 		.4byte	.LASF0
+ 174 002c 03       		.uleb128 0x3
+ 175 002d 00000000 		.4byte	.LASF4
+ 176 0031 02       		.byte	0x2
+ 177 0032 1D       		.byte	0x1d
+ 178 0033 37000000 		.4byte	0x37
+ 179 0037 02       		.uleb128 0x2
+ 180 0038 01       		.byte	0x1
+ 181 0039 08       		.byte	0x8
+ 182 003a BC000000 		.4byte	.LASF1
+ 183 003e 02       		.uleb128 0x2
+ 184 003f 02       		.byte	0x2
+ 185 0040 05       		.byte	0x5
+ 186 0041 01020000 		.4byte	.LASF2
+ 187 0045 02       		.uleb128 0x2
+ 188 0046 02       		.byte	0x2
+ 189 0047 07       		.byte	0x7
+ 190 0048 7E010000 		.4byte	.LASF3
+ 191 004c 03       		.uleb128 0x3
+ 192 004d 6C000000 		.4byte	.LASF5
+ 193 0051 02       		.byte	0x2
+ 194 0052 3F       		.byte	0x3f
+ 195 0053 57000000 		.4byte	0x57
+ 196 0057 02       		.uleb128 0x2
+ 197 0058 04       		.byte	0x4
+ 198 0059 05       		.byte	0x5
+ 199 005a 31020000 		.4byte	.LASF6
+ 200 005e 02       		.uleb128 0x2
+ 201 005f 04       		.byte	0x4
+ 202 0060 07       		.byte	0x7
+ 203 0061 58010000 		.4byte	.LASF7
+ 204 0065 02       		.uleb128 0x2
+ 205 0066 08       		.byte	0x8
+ 206 0067 05       		.byte	0x5
+ 207 0068 E7010000 		.4byte	.LASF8
+ 208 006c 02       		.uleb128 0x2
+ 209 006d 08       		.byte	0x8
+ 210 006e 07       		.byte	0x7
+ 211 006f B7010000 		.4byte	.LASF9
+ 212 0073 04       		.uleb128 0x4
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 6
+
+
+ 213 0074 04       		.byte	0x4
+ 214 0075 05       		.byte	0x5
+ 215 0076 696E7400 		.ascii	"int\000"
+ 216 007a 02       		.uleb128 0x2
+ 217 007b 04       		.byte	0x4
+ 218 007c 07       		.byte	0x7
+ 219 007d AA010000 		.4byte	.LASF10
+ 220 0081 03       		.uleb128 0x3
+ 221 0082 CE010000 		.4byte	.LASF11
+ 222 0086 03       		.byte	0x3
+ 223 0087 18       		.byte	0x18
+ 224 0088 2C000000 		.4byte	0x2c
+ 225 008c 03       		.uleb128 0x3
+ 226 008d D6010000 		.4byte	.LASF12
+ 227 0091 03       		.byte	0x3
+ 228 0092 2C       		.byte	0x2c
+ 229 0093 4C000000 		.4byte	0x4c
+ 230 0097 02       		.uleb128 0x2
+ 231 0098 04       		.byte	0x4
+ 232 0099 04       		.byte	0x4
+ 233 009a A6000000 		.4byte	.LASF13
+ 234 009e 02       		.uleb128 0x2
+ 235 009f 08       		.byte	0x8
+ 236 00a0 04       		.byte	0x4
+ 237 00a1 9E010000 		.4byte	.LASF14
+ 238 00a5 02       		.uleb128 0x2
+ 239 00a6 01       		.byte	0x1
+ 240 00a7 08       		.byte	0x8
+ 241 00a8 FC010000 		.4byte	.LASF15
+ 242 00ac 02       		.uleb128 0x2
+ 243 00ad 08       		.byte	0x8
+ 244 00ae 04       		.byte	0x4
+ 245 00af 3A020000 		.4byte	.LASF16
+ 246 00b3 02       		.uleb128 0x2
+ 247 00b4 04       		.byte	0x4
+ 248 00b5 07       		.byte	0x7
+ 249 00b6 DE010000 		.4byte	.LASF17
+ 250 00ba 05       		.uleb128 0x5
+ 251 00bb 52020000 		.4byte	.LASF28
+ 252 00bf 01       		.byte	0x1
+ 253 00c0 25       		.byte	0x25
+ 254 00c1 00000000 		.4byte	.LFB64
+ 255 00c5 38000000 		.4byte	.LFE64-.LFB64
+ 256 00c9 01       		.uleb128 0x1
+ 257 00ca 9C       		.byte	0x9c
+ 258 00cb 56010000 		.4byte	0x156
+ 259 00cf 06       		.uleb128 0x6
+ 260 00d0 23020000 		.4byte	.LASF18
+ 261 00d4 01       		.byte	0x1
+ 262 00d5 27       		.byte	0x27
+ 263 00d6 81000000 		.4byte	0x81
+ 264 00da 00000000 		.4byte	.LLST0
+ 265 00de 07       		.uleb128 0x7
+ 266 00df 08000000 		.4byte	.LBB2
+ 267 00e3 26000000 		.4byte	.LBE2-.LBB2
+ 268 00e7 4C010000 		.4byte	0x14c
+ 269 00eb 08       		.uleb128 0x8
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 7
+
+
+ 270 00ec 6900     		.ascii	"i\000"
+ 271 00ee 01       		.byte	0x1
+ 272 00ef 29       		.byte	0x29
+ 273 00f0 81000000 		.4byte	0x81
+ 274 00f4 13000000 		.4byte	.LLST1
+ 275 00f8 09       		.uleb128 0x9
+ 276 00f9 0C000000 		.4byte	.LBB3
+ 277 00fd 1A000000 		.4byte	.LBE3-.LBB3
+ 278 0101 08       		.uleb128 0x8
+ 279 0102 6300     		.ascii	"c\000"
+ 280 0104 01       		.byte	0x1
+ 281 0105 2B       		.byte	0x2b
+ 282 0106 A5000000 		.4byte	0xa5
+ 283 010a 3D000000 		.4byte	.LLST2
+ 284 010e 0A       		.uleb128 0xa
+ 285 010f 10000000 		.4byte	.LVL3
+ 286 0113 B8010000 		.4byte	0x1b8
+ 287 0117 0B       		.uleb128 0xb
+ 288 0118 1A000000 		.4byte	.LVL5
+ 289 011c C3010000 		.4byte	0x1c3
+ 290 0120 2E010000 		.4byte	0x12e
+ 291 0124 0C       		.uleb128 0xc
+ 292 0125 01       		.uleb128 0x1
+ 293 0126 50       		.byte	0x50
+ 294 0127 05       		.uleb128 0x5
+ 295 0128 03       		.byte	0x3
+ 296 0129 00000000 		.4byte	.LC0
+ 297 012d 00       		.byte	0
+ 298 012e 0A       		.uleb128 0xa
+ 299 012f 20000000 		.4byte	.LVL7
+ 300 0133 CE010000 		.4byte	0x1ce
+ 301 0137 0D       		.uleb128 0xd
+ 302 0138 26000000 		.4byte	.LVL8
+ 303 013c C3010000 		.4byte	0x1c3
+ 304 0140 0C       		.uleb128 0xc
+ 305 0141 01       		.uleb128 0x1
+ 306 0142 50       		.byte	0x50
+ 307 0143 05       		.uleb128 0x5
+ 308 0144 03       		.byte	0x3
+ 309 0145 08000000 		.4byte	.LC1
+ 310 0149 00       		.byte	0
+ 311 014a 00       		.byte	0
+ 312 014b 00       		.byte	0
+ 313 014c 0A       		.uleb128 0xa
+ 314 014d 06000000 		.4byte	.LVL0
+ 315 0151 D9010000 		.4byte	0x1d9
+ 316 0155 00       		.byte	0
+ 317 0156 0E       		.uleb128 0xe
+ 318 0157 A5010000 		.4byte	.LASF29
+ 319 015b 01       		.byte	0x1
+ 320 015c 11       		.byte	0x11
+ 321 015d 73000000 		.4byte	0x73
+ 322 0161 00000000 		.4byte	.LFB63
+ 323 0165 20000000 		.4byte	.LFE63-.LFB63
+ 324 0169 01       		.uleb128 0x1
+ 325 016a 9C       		.byte	0x9c
+ 326 016b A7010000 		.4byte	0x1a7
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 8
+
+
+ 327 016f 0B       		.uleb128 0xb
+ 328 0170 08000000 		.4byte	.LVL12
+ 329 0174 C3010000 		.4byte	0x1c3
+ 330 0178 86010000 		.4byte	0x186
+ 331 017c 0C       		.uleb128 0xc
+ 332 017d 01       		.uleb128 0x1
+ 333 017e 50       		.byte	0x50
+ 334 017f 05       		.uleb128 0x5
+ 335 0180 03       		.byte	0x3
+ 336 0181 0C000000 		.4byte	.LC2
+ 337 0185 00       		.byte	0
+ 338 0186 0B       		.uleb128 0xb
+ 339 0187 10000000 		.4byte	.LVL13
+ 340 018b E4010000 		.4byte	0x1e4
+ 341 018f 9D010000 		.4byte	0x19d
+ 342 0193 0C       		.uleb128 0xc
+ 343 0194 01       		.uleb128 0x1
+ 344 0195 50       		.byte	0x50
+ 345 0196 05       		.uleb128 0x5
+ 346 0197 03       		.byte	0x3
+ 347 0198 00000000 		.4byte	UART_Rx_CT_Handeler
+ 348 019c 00       		.byte	0
+ 349 019d 0A       		.uleb128 0xa
+ 350 019e 14000000 		.4byte	.LVL14
+ 351 01a2 EF010000 		.4byte	0x1ef
+ 352 01a6 00       		.byte	0
+ 353 01a7 0F       		.uleb128 0xf
+ 354 01a8 91010000 		.4byte	.LASF30
+ 355 01ac 06       		.byte	0x6
+ 356 01ad 1207     		.2byte	0x712
+ 357 01af B3010000 		.4byte	0x1b3
+ 358 01b3 10       		.uleb128 0x10
+ 359 01b4 8C000000 		.4byte	0x8c
+ 360 01b8 11       		.uleb128 0x11
+ 361 01b9 AC000000 		.4byte	.LASF19
+ 362 01bd AC000000 		.4byte	.LASF19
+ 363 01c1 04       		.byte	0x4
+ 364 01c2 71       		.byte	0x71
+ 365 01c3 11       		.uleb128 0x11
+ 366 01c4 94000000 		.4byte	.LASF20
+ 367 01c8 94000000 		.4byte	.LASF20
+ 368 01cc 04       		.byte	0x4
+ 369 01cd 8B       		.byte	0x8b
+ 370 01ce 11       		.uleb128 0x11
+ 371 01cf 76000000 		.4byte	.LASF21
+ 372 01d3 76000000 		.4byte	.LASF21
+ 373 01d7 04       		.byte	0x4
+ 374 01d8 8A       		.byte	0x8a
+ 375 01d9 11       		.uleb128 0x11
+ 376 01da 0B020000 		.4byte	.LASF22
+ 377 01de 0B020000 		.4byte	.LASF22
+ 378 01e2 04       		.byte	0x4
+ 379 01e3 73       		.byte	0x73
+ 380 01e4 11       		.uleb128 0x11
+ 381 01e5 6A010000 		.4byte	.LASF23
+ 382 01e9 6A010000 		.4byte	.LASF23
+ 383 01ed 05       		.byte	0x5
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 9
+
+
+ 384 01ee 18       		.byte	0x18
+ 385 01ef 11       		.uleb128 0x11
+ 386 01f0 86000000 		.4byte	.LASF24
+ 387 01f4 86000000 		.4byte	.LASF24
+ 388 01f8 04       		.byte	0x4
+ 389 01f9 54       		.byte	0x54
+ 390 01fa 00       		.byte	0
+ 391              		.section	.debug_abbrev,"",%progbits
+ 392              	.Ldebug_abbrev0:
+ 393 0000 01       		.uleb128 0x1
+ 394 0001 11       		.uleb128 0x11
+ 395 0002 01       		.byte	0x1
+ 396 0003 25       		.uleb128 0x25
+ 397 0004 0E       		.uleb128 0xe
+ 398 0005 13       		.uleb128 0x13
+ 399 0006 0B       		.uleb128 0xb
+ 400 0007 03       		.uleb128 0x3
+ 401 0008 0E       		.uleb128 0xe
+ 402 0009 1B       		.uleb128 0x1b
+ 403 000a 0E       		.uleb128 0xe
+ 404 000b 55       		.uleb128 0x55
+ 405 000c 17       		.uleb128 0x17
+ 406 000d 11       		.uleb128 0x11
+ 407 000e 01       		.uleb128 0x1
+ 408 000f 10       		.uleb128 0x10
+ 409 0010 17       		.uleb128 0x17
+ 410 0011 00       		.byte	0
+ 411 0012 00       		.byte	0
+ 412 0013 02       		.uleb128 0x2
+ 413 0014 24       		.uleb128 0x24
+ 414 0015 00       		.byte	0
+ 415 0016 0B       		.uleb128 0xb
+ 416 0017 0B       		.uleb128 0xb
+ 417 0018 3E       		.uleb128 0x3e
+ 418 0019 0B       		.uleb128 0xb
+ 419 001a 03       		.uleb128 0x3
+ 420 001b 0E       		.uleb128 0xe
+ 421 001c 00       		.byte	0
+ 422 001d 00       		.byte	0
+ 423 001e 03       		.uleb128 0x3
+ 424 001f 16       		.uleb128 0x16
+ 425 0020 00       		.byte	0
+ 426 0021 03       		.uleb128 0x3
+ 427 0022 0E       		.uleb128 0xe
+ 428 0023 3A       		.uleb128 0x3a
+ 429 0024 0B       		.uleb128 0xb
+ 430 0025 3B       		.uleb128 0x3b
+ 431 0026 0B       		.uleb128 0xb
+ 432 0027 49       		.uleb128 0x49
+ 433 0028 13       		.uleb128 0x13
+ 434 0029 00       		.byte	0
+ 435 002a 00       		.byte	0
+ 436 002b 04       		.uleb128 0x4
+ 437 002c 24       		.uleb128 0x24
+ 438 002d 00       		.byte	0
+ 439 002e 0B       		.uleb128 0xb
+ 440 002f 0B       		.uleb128 0xb
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 10
+
+
+ 441 0030 3E       		.uleb128 0x3e
+ 442 0031 0B       		.uleb128 0xb
+ 443 0032 03       		.uleb128 0x3
+ 444 0033 08       		.uleb128 0x8
+ 445 0034 00       		.byte	0
+ 446 0035 00       		.byte	0
+ 447 0036 05       		.uleb128 0x5
+ 448 0037 2E       		.uleb128 0x2e
+ 449 0038 01       		.byte	0x1
+ 450 0039 3F       		.uleb128 0x3f
+ 451 003a 19       		.uleb128 0x19
+ 452 003b 03       		.uleb128 0x3
+ 453 003c 0E       		.uleb128 0xe
+ 454 003d 3A       		.uleb128 0x3a
+ 455 003e 0B       		.uleb128 0xb
+ 456 003f 3B       		.uleb128 0x3b
+ 457 0040 0B       		.uleb128 0xb
+ 458 0041 27       		.uleb128 0x27
+ 459 0042 19       		.uleb128 0x19
+ 460 0043 11       		.uleb128 0x11
+ 461 0044 01       		.uleb128 0x1
+ 462 0045 12       		.uleb128 0x12
+ 463 0046 06       		.uleb128 0x6
+ 464 0047 40       		.uleb128 0x40
+ 465 0048 18       		.uleb128 0x18
+ 466 0049 9742     		.uleb128 0x2117
+ 467 004b 19       		.uleb128 0x19
+ 468 004c 01       		.uleb128 0x1
+ 469 004d 13       		.uleb128 0x13
+ 470 004e 00       		.byte	0
+ 471 004f 00       		.byte	0
+ 472 0050 06       		.uleb128 0x6
+ 473 0051 34       		.uleb128 0x34
+ 474 0052 00       		.byte	0
+ 475 0053 03       		.uleb128 0x3
+ 476 0054 0E       		.uleb128 0xe
+ 477 0055 3A       		.uleb128 0x3a
+ 478 0056 0B       		.uleb128 0xb
+ 479 0057 3B       		.uleb128 0x3b
+ 480 0058 0B       		.uleb128 0xb
+ 481 0059 49       		.uleb128 0x49
+ 482 005a 13       		.uleb128 0x13
+ 483 005b 02       		.uleb128 0x2
+ 484 005c 17       		.uleb128 0x17
+ 485 005d 00       		.byte	0
+ 486 005e 00       		.byte	0
+ 487 005f 07       		.uleb128 0x7
+ 488 0060 0B       		.uleb128 0xb
+ 489 0061 01       		.byte	0x1
+ 490 0062 11       		.uleb128 0x11
+ 491 0063 01       		.uleb128 0x1
+ 492 0064 12       		.uleb128 0x12
+ 493 0065 06       		.uleb128 0x6
+ 494 0066 01       		.uleb128 0x1
+ 495 0067 13       		.uleb128 0x13
+ 496 0068 00       		.byte	0
+ 497 0069 00       		.byte	0
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 11
+
+
+ 498 006a 08       		.uleb128 0x8
+ 499 006b 34       		.uleb128 0x34
+ 500 006c 00       		.byte	0
+ 501 006d 03       		.uleb128 0x3
+ 502 006e 08       		.uleb128 0x8
+ 503 006f 3A       		.uleb128 0x3a
+ 504 0070 0B       		.uleb128 0xb
+ 505 0071 3B       		.uleb128 0x3b
+ 506 0072 0B       		.uleb128 0xb
+ 507 0073 49       		.uleb128 0x49
+ 508 0074 13       		.uleb128 0x13
+ 509 0075 02       		.uleb128 0x2
+ 510 0076 17       		.uleb128 0x17
+ 511 0077 00       		.byte	0
+ 512 0078 00       		.byte	0
+ 513 0079 09       		.uleb128 0x9
+ 514 007a 0B       		.uleb128 0xb
+ 515 007b 01       		.byte	0x1
+ 516 007c 11       		.uleb128 0x11
+ 517 007d 01       		.uleb128 0x1
+ 518 007e 12       		.uleb128 0x12
+ 519 007f 06       		.uleb128 0x6
+ 520 0080 00       		.byte	0
+ 521 0081 00       		.byte	0
+ 522 0082 0A       		.uleb128 0xa
+ 523 0083 898201   		.uleb128 0x4109
+ 524 0086 00       		.byte	0
+ 525 0087 11       		.uleb128 0x11
+ 526 0088 01       		.uleb128 0x1
+ 527 0089 31       		.uleb128 0x31
+ 528 008a 13       		.uleb128 0x13
+ 529 008b 00       		.byte	0
+ 530 008c 00       		.byte	0
+ 531 008d 0B       		.uleb128 0xb
+ 532 008e 898201   		.uleb128 0x4109
+ 533 0091 01       		.byte	0x1
+ 534 0092 11       		.uleb128 0x11
+ 535 0093 01       		.uleb128 0x1
+ 536 0094 31       		.uleb128 0x31
+ 537 0095 13       		.uleb128 0x13
+ 538 0096 01       		.uleb128 0x1
+ 539 0097 13       		.uleb128 0x13
+ 540 0098 00       		.byte	0
+ 541 0099 00       		.byte	0
+ 542 009a 0C       		.uleb128 0xc
+ 543 009b 8A8201   		.uleb128 0x410a
+ 544 009e 00       		.byte	0
+ 545 009f 02       		.uleb128 0x2
+ 546 00a0 18       		.uleb128 0x18
+ 547 00a1 9142     		.uleb128 0x2111
+ 548 00a3 18       		.uleb128 0x18
+ 549 00a4 00       		.byte	0
+ 550 00a5 00       		.byte	0
+ 551 00a6 0D       		.uleb128 0xd
+ 552 00a7 898201   		.uleb128 0x4109
+ 553 00aa 01       		.byte	0x1
+ 554 00ab 11       		.uleb128 0x11
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 12
+
+
+ 555 00ac 01       		.uleb128 0x1
+ 556 00ad 31       		.uleb128 0x31
+ 557 00ae 13       		.uleb128 0x13
+ 558 00af 00       		.byte	0
+ 559 00b0 00       		.byte	0
+ 560 00b1 0E       		.uleb128 0xe
+ 561 00b2 2E       		.uleb128 0x2e
+ 562 00b3 01       		.byte	0x1
+ 563 00b4 3F       		.uleb128 0x3f
+ 564 00b5 19       		.uleb128 0x19
+ 565 00b6 03       		.uleb128 0x3
+ 566 00b7 0E       		.uleb128 0xe
+ 567 00b8 3A       		.uleb128 0x3a
+ 568 00b9 0B       		.uleb128 0xb
+ 569 00ba 3B       		.uleb128 0x3b
+ 570 00bb 0B       		.uleb128 0xb
+ 571 00bc 27       		.uleb128 0x27
+ 572 00bd 19       		.uleb128 0x19
+ 573 00be 49       		.uleb128 0x49
+ 574 00bf 13       		.uleb128 0x13
+ 575 00c0 8701     		.uleb128 0x87
+ 576 00c2 19       		.uleb128 0x19
+ 577 00c3 11       		.uleb128 0x11
+ 578 00c4 01       		.uleb128 0x1
+ 579 00c5 12       		.uleb128 0x12
+ 580 00c6 06       		.uleb128 0x6
+ 581 00c7 40       		.uleb128 0x40
+ 582 00c8 18       		.uleb128 0x18
+ 583 00c9 9742     		.uleb128 0x2117
+ 584 00cb 19       		.uleb128 0x19
+ 585 00cc 01       		.uleb128 0x1
+ 586 00cd 13       		.uleb128 0x13
+ 587 00ce 00       		.byte	0
+ 588 00cf 00       		.byte	0
+ 589 00d0 0F       		.uleb128 0xf
+ 590 00d1 34       		.uleb128 0x34
+ 591 00d2 00       		.byte	0
+ 592 00d3 03       		.uleb128 0x3
+ 593 00d4 0E       		.uleb128 0xe
+ 594 00d5 3A       		.uleb128 0x3a
+ 595 00d6 0B       		.uleb128 0xb
+ 596 00d7 3B       		.uleb128 0x3b
+ 597 00d8 05       		.uleb128 0x5
+ 598 00d9 49       		.uleb128 0x49
+ 599 00da 13       		.uleb128 0x13
+ 600 00db 3F       		.uleb128 0x3f
+ 601 00dc 19       		.uleb128 0x19
+ 602 00dd 3C       		.uleb128 0x3c
+ 603 00de 19       		.uleb128 0x19
+ 604 00df 00       		.byte	0
+ 605 00e0 00       		.byte	0
+ 606 00e1 10       		.uleb128 0x10
+ 607 00e2 35       		.uleb128 0x35
+ 608 00e3 00       		.byte	0
+ 609 00e4 49       		.uleb128 0x49
+ 610 00e5 13       		.uleb128 0x13
+ 611 00e6 00       		.byte	0
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 13
+
+
+ 612 00e7 00       		.byte	0
+ 613 00e8 11       		.uleb128 0x11
+ 614 00e9 2E       		.uleb128 0x2e
+ 615 00ea 00       		.byte	0
+ 616 00eb 3F       		.uleb128 0x3f
+ 617 00ec 19       		.uleb128 0x19
+ 618 00ed 3C       		.uleb128 0x3c
+ 619 00ee 19       		.uleb128 0x19
+ 620 00ef 6E       		.uleb128 0x6e
+ 621 00f0 0E       		.uleb128 0xe
+ 622 00f1 03       		.uleb128 0x3
+ 623 00f2 0E       		.uleb128 0xe
+ 624 00f3 3A       		.uleb128 0x3a
+ 625 00f4 0B       		.uleb128 0xb
+ 626 00f5 3B       		.uleb128 0x3b
+ 627 00f6 0B       		.uleb128 0xb
+ 628 00f7 00       		.byte	0
+ 629 00f8 00       		.byte	0
+ 630 00f9 00       		.byte	0
+ 631              		.section	.debug_loc,"",%progbits
+ 632              	.Ldebug_loc0:
+ 633              	.LLST0:
+ 634 0000 08000000 		.4byte	.LVL1
+ 635 0004 30000000 		.4byte	.LVL11
+ 636 0008 0100     		.2byte	0x1
+ 637 000a 55       		.byte	0x55
+ 638 000b 00000000 		.4byte	0
+ 639 000f 00000000 		.4byte	0
+ 640              	.LLST1:
+ 641 0013 08000000 		.4byte	.LVL1
+ 642 0017 0C000000 		.4byte	.LVL2
+ 643 001b 0200     		.2byte	0x2
+ 644 001d 30       		.byte	0x30
+ 645 001e 9F       		.byte	0x9f
+ 646 001f 0C000000 		.4byte	.LVL2
+ 647 0023 28000000 		.4byte	.LVL9
+ 648 0027 0100     		.2byte	0x1
+ 649 0029 54       		.byte	0x54
+ 650 002a 2A000000 		.4byte	.LVL10
+ 651 002e 30000000 		.4byte	.LVL11
+ 652 0032 0100     		.2byte	0x1
+ 653 0034 54       		.byte	0x54
+ 654 0035 00000000 		.4byte	0
+ 655 0039 00000000 		.4byte	0
+ 656              	.LLST2:
+ 657 003d 10000000 		.4byte	.LVL3
+ 658 0041 16000000 		.4byte	.LVL4
+ 659 0045 0100     		.2byte	0x1
+ 660 0047 50       		.byte	0x50
+ 661 0048 1C000000 		.4byte	.LVL6
+ 662 004c 1F000000 		.4byte	.LVL7-1
+ 663 0050 0100     		.2byte	0x1
+ 664 0052 50       		.byte	0x50
+ 665 0053 00000000 		.4byte	0
+ 666 0057 00000000 		.4byte	0
+ 667              		.section	.debug_aranges,"",%progbits
+ 668 0000 24000000 		.4byte	0x24
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 14
+
+
+ 669 0004 0200     		.2byte	0x2
+ 670 0006 00000000 		.4byte	.Ldebug_info0
+ 671 000a 04       		.byte	0x4
+ 672 000b 00       		.byte	0
+ 673 000c 0000     		.2byte	0
+ 674 000e 0000     		.2byte	0
+ 675 0010 00000000 		.4byte	.LFB64
+ 676 0014 38000000 		.4byte	.LFE64-.LFB64
+ 677 0018 00000000 		.4byte	.LFB63
+ 678 001c 20000000 		.4byte	.LFE63-.LFB63
+ 679 0020 00000000 		.4byte	0
+ 680 0024 00000000 		.4byte	0
+ 681              		.section	.debug_ranges,"",%progbits
+ 682              	.Ldebug_ranges0:
+ 683 0000 00000000 		.4byte	.LFB64
+ 684 0004 38000000 		.4byte	.LFE64
+ 685 0008 00000000 		.4byte	.LFB63
+ 686 000c 20000000 		.4byte	.LFE63
+ 687 0010 00000000 		.4byte	0
+ 688 0014 00000000 		.4byte	0
+ 689              		.section	.debug_line,"",%progbits
+ 690              	.Ldebug_line0:
+ 691 0000 9E010000 		.section	.debug_str,"MS",%progbits,1
+ 691      02005D01 
+ 691      00000201 
+ 691      FB0E0D00 
+ 691      01010101 
+ 692              	.LASF4:
+ 693 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 693      6E74385F 
+ 693      7400
+ 694              	.LASF27:
+ 695 000a 433A5C55 		.ascii	"C:\\Users\\mathias\\Documents\\Uni\\2sem\\GFV\\Afle"
+ 695      73657273 
+ 695      5C6D6174 
+ 695      68696173 
+ 695      5C446F63 
+ 696 0036 76657269 		.ascii	"vering2\\GFVAflevering2\\Project\\Lab2\\Opgave1_I2C"
+ 696      6E67325C 
+ 696      47465641 
+ 696      666C6576 
+ 696      6572696E 
+ 697 0065 2E637964 		.ascii	".cydsn\000"
+ 697      736E00
+ 698              	.LASF5:
+ 699 006c 5F5F696E 		.ascii	"__int32_t\000"
+ 699      7433325F 
+ 699      7400
+ 700              	.LASF21:
+ 701 0076 55415254 		.ascii	"UART_CT_PutChar\000"
+ 701      5F43545F 
+ 701      50757443 
+ 701      68617200 
+ 702              	.LASF24:
+ 703 0086 55415254 		.ascii	"UART_CT_Start\000"
+ 703      5F43545F 
+ 703      53746172 
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 15
+
+
+ 703      7400
+ 704              	.LASF20:
+ 705 0094 55415254 		.ascii	"UART_CT_PutString\000"
+ 705      5F43545F 
+ 705      50757453 
+ 705      7472696E 
+ 705      6700
+ 706              	.LASF13:
+ 707 00a6 666C6F61 		.ascii	"float\000"
+ 707      7400
+ 708              	.LASF19:
+ 709 00ac 55415254 		.ascii	"UART_CT_GetChar\000"
+ 709      5F43545F 
+ 709      47657443 
+ 709      68617200 
+ 710              	.LASF1:
+ 711 00bc 756E7369 		.ascii	"unsigned char\000"
+ 711      676E6564 
+ 711      20636861 
+ 711      7200
+ 712              	.LASF25:
+ 713 00ca 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 713      43313120 
+ 713      352E342E 
+ 713      31203230 
+ 713      31363036 
+ 714 00fd 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 714      20726576 
+ 714      6973696F 
+ 714      6E203233 
+ 714      37373135 
+ 715 0130 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 715      66756E63 
+ 715      74696F6E 
+ 715      2D736563 
+ 715      74696F6E 
+ 716              	.LASF7:
+ 717 0158 6C6F6E67 		.ascii	"long unsigned int\000"
+ 717      20756E73 
+ 717      69676E65 
+ 717      6420696E 
+ 717      7400
+ 718              	.LASF23:
+ 719 016a 6973725F 		.ascii	"isr_UART_CT_StartEx\000"
+ 719      55415254 
+ 719      5F43545F 
+ 719      53746172 
+ 719      74457800 
+ 720              	.LASF3:
+ 721 017e 73686F72 		.ascii	"short unsigned int\000"
+ 721      7420756E 
+ 721      7369676E 
+ 721      65642069 
+ 721      6E7400
+ 722              	.LASF30:
+ 723 0191 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 723      52784275 
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 16
+
+
+ 723      66666572 
+ 723      00
+ 724              	.LASF14:
+ 725 019e 646F7562 		.ascii	"double\000"
+ 725      6C6500
+ 726              	.LASF29:
+ 727 01a5 6D61696E 		.ascii	"main\000"
+ 727      00
+ 728              	.LASF10:
+ 729 01aa 756E7369 		.ascii	"unsigned int\000"
+ 729      676E6564 
+ 729      20696E74 
+ 729      00
+ 730              	.LASF9:
+ 731 01b7 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 731      206C6F6E 
+ 731      6720756E 
+ 731      7369676E 
+ 731      65642069 
+ 732              	.LASF11:
+ 733 01ce 75696E74 		.ascii	"uint8_t\000"
+ 733      385F7400 
+ 734              	.LASF12:
+ 735 01d6 696E7433 		.ascii	"int32_t\000"
+ 735      325F7400 
+ 736              	.LASF17:
+ 737 01de 73697A65 		.ascii	"sizetype\000"
+ 737      74797065 
+ 737      00
+ 738              	.LASF8:
+ 739 01e7 6C6F6E67 		.ascii	"long long int\000"
+ 739      206C6F6E 
+ 739      6720696E 
+ 739      7400
+ 740              	.LASF26:
+ 741 01f5 6D61696E 		.ascii	"main.c\000"
+ 741      2E6300
+ 742              	.LASF15:
+ 743 01fc 63686172 		.ascii	"char\000"
+ 743      00
+ 744              	.LASF2:
+ 745 0201 73686F72 		.ascii	"short int\000"
+ 745      7420696E 
+ 745      7400
+ 746              	.LASF22:
+ 747 020b 55415254 		.ascii	"UART_CT_GetRxBufferSize\000"
+ 747      5F43545F 
+ 747      47657452 
+ 747      78427566 
+ 747      66657253 
+ 748              	.LASF18:
+ 749 0223 6E756D62 		.ascii	"numberOfBytes\000"
+ 749      65724F66 
+ 749      42797465 
+ 749      7300
+ 750              	.LASF6:
+ 751 0231 6C6F6E67 		.ascii	"long int\000"
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cck8a7iS.s 			page 17
+
+
+ 751      20696E74 
+ 751      00
+ 752              	.LASF16:
+ 753 023a 6C6F6E67 		.ascii	"long double\000"
+ 753      20646F75 
+ 753      626C6500 
+ 754              	.LASF0:
+ 755 0246 7369676E 		.ascii	"signed char\000"
+ 755      65642063 
+ 755      68617200 
+ 756              	.LASF28:
+ 757 0252 55415254 		.ascii	"UART_Rx_CT_Handeler\000"
+ 757      5F52785F 
+ 757      43545F48 
+ 757      616E6465 
+ 757      6C657200 
+ 758              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

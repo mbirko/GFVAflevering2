@@ -1,0 +1,928 @@
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"CustomPrint.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.PrintStringInt,"ax",%progbits
+  20              		.align	2
+  21              		.global	PrintStringInt
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	PrintStringInt, %function
+  25              	PrintStringInt:
+  26              	.LFB64:
+  27              		.file 1 "CustomPrint.c"
+   1:CustomPrint.c **** /* ========================================
+   2:CustomPrint.c ****  *
+   3:CustomPrint.c ****  * Copyright YOUR COMPANY, THE YEAR
+   4:CustomPrint.c ****  * All Rights Reserved
+   5:CustomPrint.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:CustomPrint.c ****  *
+   7:CustomPrint.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:CustomPrint.c ****  * WHICH IS THE PROPERTY OF your company.
+   9:CustomPrint.c ****  *
+  10:CustomPrint.c ****  * ========================================
+  11:CustomPrint.c **** */
+  12:CustomPrint.c **** 
+  13:CustomPrint.c **** 
+  14:CustomPrint.c **** #include <stdint.h>
+  15:CustomPrint.c **** #include "project.h"
+  16:CustomPrint.c **** #include "CustomPrint.h"
+  17:CustomPrint.c **** #include <stdio.h>
+  18:CustomPrint.c ****     //prints a sring followed by a interger number 
+  19:CustomPrint.c **** void PrintStringInt(char string[], uint8_t strLen, uint8_t number)
+  20:CustomPrint.c **** {
+  28              		.loc 1 20 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 264
+  31              		@ frame_needed = 1, uses_anonymous_args = 0
+  32              	.LVL0:
+  33 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+  34              		.cfi_def_cfa_offset 20
+  35              		.cfi_offset 4, -20
+  36              		.cfi_offset 5, -16
+  37              		.cfi_offset 6, -12
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 2
+
+
+  38              		.cfi_offset 7, -8
+  39              		.cfi_offset 14, -4
+  40 0002 C3B0     		sub	sp, sp, #268
+  41              		.cfi_def_cfa_offset 288
+  42 0004 00AF     		add	r7, sp, #0
+  43              		.cfi_def_cfa_register 7
+  44 0006 8646     		mov	lr, r0
+  45 0008 0C46     		mov	r4, r1
+  46 000a 1346     		mov	r3, r2
+  21:CustomPrint.c ****     char conChar[5] = {": %d"}, str[strLen+4], buffer[255]; 
+  47              		.loc 1 21 0
+  48 000c 164A     		ldr	r2, .L7
+  49              	.LVL1:
+  50 000e 92E80300 		ldmia	r2, {r0, r1}
+  51              	.LVL2:
+  52 0012 C7F80001 		str	r0, [r7, #256]
+  53 0016 87F80411 		strb	r1, [r7, #260]
+  54 001a 2646     		mov	r6, r4
+  55 001c 251D     		adds	r5, r4, #4
+  56              	.LVL3:
+  57 001e 04F10B02 		add	r2, r4, #11
+  58 0022 22F00702 		bic	r2, r2, #7
+  59 0026 ADEB020D 		sub	sp, sp, r2
+  60 002a 6A46     		mov	r2, sp
+  61              	.LVL4:
+  22:CustomPrint.c ****     uint8_t i = 0;
+  23:CustomPrint.c ****     for (i = 0; i < strLen; i++)
+  62              		.loc 1 23 0
+  63 002c 0021     		movs	r1, #0
+  64 002e 04E0     		b	.L2
+  65              	.LVL5:
+  66              	.L3:
+  24:CustomPrint.c ****     {
+  25:CustomPrint.c ****         str[i] = string[i];
+  67              		.loc 1 25 0 discriminator 3
+  68 0030 1EF80100 		ldrb	r0, [lr, r1]	@ zero_extendqisi2
+  69 0034 5054     		strb	r0, [r2, r1]
+  23:CustomPrint.c ****     {
+  70              		.loc 1 23 0 discriminator 3
+  71 0036 0131     		adds	r1, r1, #1
+  72              	.LVL6:
+  73 0038 C9B2     		uxtb	r1, r1
+  74              	.LVL7:
+  75              	.L2:
+  23:CustomPrint.c ****     {
+  76              		.loc 1 23 0 is_stmt 0 discriminator 1
+  77 003a A142     		cmp	r1, r4
+  78 003c F8D3     		bcc	.L3
+  79 003e 08E0     		b	.L4
+  80              	.LVL8:
+  81              	.L5:
+  26:CustomPrint.c ****     }
+  27:CustomPrint.c ****     for (i = strLen; i < strLen+4; i++)
+  28:CustomPrint.c ****     {
+  29:CustomPrint.c ****         str[i] = conChar[i - strLen];
+  82              		.loc 1 29 0 is_stmt 1 discriminator 3
+  83 0040 A11B     		subs	r1, r4, r6
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 3
+
+
+  84 0042 07F58470 		add	r0, r7, #264
+  85 0046 0144     		add	r1, r1, r0
+  86 0048 11F8081C 		ldrb	r1, [r1, #-8]	@ zero_extendqisi2
+  87 004c 1155     		strb	r1, [r2, r4]
+  27:CustomPrint.c ****     {
+  88              		.loc 1 27 0 discriminator 3
+  89 004e 0134     		adds	r4, r4, #1
+  90              	.LVL9:
+  91 0050 E4B2     		uxtb	r4, r4
+  92              	.LVL10:
+  93              	.L4:
+  27:CustomPrint.c ****     {
+  94              		.loc 1 27 0 is_stmt 0 discriminator 1
+  95 0052 A542     		cmp	r5, r4
+  96 0054 F4DC     		bgt	.L5
+  30:CustomPrint.c ****     }
+  31:CustomPrint.c ****     
+  32:CustomPrint.c ****     snprintf(buffer, sizeof(buffer), str, number);
+  97              		.loc 1 32 0 is_stmt 1
+  98 0056 FF21     		movs	r1, #255
+  99 0058 3846     		mov	r0, r7
+ 100 005a FFF7FEFF 		bl	snprintf
+ 101              	.LVL11:
+  33:CustomPrint.c **** 
+  34:CustomPrint.c **** return;
+  35:CustomPrint.c **** }
+ 102              		.loc 1 35 0
+ 103 005e 07F58677 		add	r7, r7, #268
+ 104              		.cfi_def_cfa_offset 20
+ 105 0062 BD46     		mov	sp, r7
+ 106              		.cfi_def_cfa_register 13
+ 107              	.LVL12:
+ 108              		@ sp needed
+ 109 0064 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 110              	.LVL13:
+ 111              	.L8:
+ 112 0066 00BF     		.align	2
+ 113              	.L7:
+ 114 0068 00000000 		.word	.LC0
+ 115              		.cfi_endproc
+ 116              	.LFE64:
+ 117              		.size	PrintStringInt, .-PrintStringInt
+ 118              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 119              		.align	2
+ 120              	.LC0:
+ 121 0000 3A202564 		.ascii	": %d\000"
+ 121      00
+ 122              		.text
+ 123              	.Letext0:
+ 124              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 125              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 126              		.file 4 "Generated_Source\\PSoC5/core_cm3.h"
+ 127              		.file 5 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 128              		.section	.debug_info,"",%progbits
+ 129              	.Ldebug_info0:
+ 130 0000 AC010000 		.4byte	0x1ac
+ 131 0004 0400     		.2byte	0x4
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 4
+
+
+ 132 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 133 000a 04       		.byte	0x4
+ 134 000b 01       		.uleb128 0x1
+ 135 000c B0000000 		.4byte	.LASF23
+ 136 0010 0C       		.byte	0xc
+ 137 0011 00000000 		.4byte	.LASF24
+ 138 0015 0E000000 		.4byte	.LASF25
+ 139 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 140 001d 00000000 		.4byte	0
+ 141 0021 00000000 		.4byte	.Ldebug_line0
+ 142 0025 02       		.uleb128 0x2
+ 143 0026 01       		.byte	0x1
+ 144 0027 06       		.byte	0x6
+ 145 0028 0A020000 		.4byte	.LASF0
+ 146 002c 03       		.uleb128 0x3
+ 147 002d 70000000 		.4byte	.LASF4
+ 148 0031 02       		.byte	0x2
+ 149 0032 1D       		.byte	0x1d
+ 150 0033 37000000 		.4byte	0x37
+ 151 0037 02       		.uleb128 0x2
+ 152 0038 01       		.byte	0x1
+ 153 0039 08       		.byte	0x8
+ 154 003a A2000000 		.4byte	.LASF1
+ 155 003e 02       		.uleb128 0x2
+ 156 003f 02       		.byte	0x2
+ 157 0040 05       		.byte	0x5
+ 158 0041 E4010000 		.4byte	.LASF2
+ 159 0045 02       		.uleb128 0x2
+ 160 0046 02       		.byte	0x2
+ 161 0047 07       		.byte	0x7
+ 162 0048 50010000 		.4byte	.LASF3
+ 163 004c 03       		.uleb128 0x3
+ 164 004d 7A000000 		.4byte	.LASF5
+ 165 0051 02       		.byte	0x2
+ 166 0052 3F       		.byte	0x3f
+ 167 0053 57000000 		.4byte	0x57
+ 168 0057 02       		.uleb128 0x2
+ 169 0058 04       		.byte	0x4
+ 170 0059 05       		.byte	0x5
+ 171 005a F5010000 		.4byte	.LASF6
+ 172 005e 02       		.uleb128 0x2
+ 173 005f 04       		.byte	0x4
+ 174 0060 07       		.byte	0x7
+ 175 0061 3E010000 		.4byte	.LASF7
+ 176 0065 02       		.uleb128 0x2
+ 177 0066 08       		.byte	0x8
+ 178 0067 05       		.byte	0x5
+ 179 0068 D1010000 		.4byte	.LASF8
+ 180 006c 02       		.uleb128 0x2
+ 181 006d 08       		.byte	0x8
+ 182 006e 07       		.byte	0x7
+ 183 006f 8B010000 		.4byte	.LASF9
+ 184 0073 04       		.uleb128 0x4
+ 185 0074 04       		.byte	0x4
+ 186 0075 05       		.byte	0x5
+ 187 0076 696E7400 		.ascii	"int\000"
+ 188 007a 02       		.uleb128 0x2
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 5
+
+
+ 189 007b 04       		.byte	0x4
+ 190 007c 07       		.byte	0x7
+ 191 007d 7E010000 		.4byte	.LASF10
+ 192 0081 03       		.uleb128 0x3
+ 193 0082 A2010000 		.4byte	.LASF11
+ 194 0086 03       		.byte	0x3
+ 195 0087 18       		.byte	0x18
+ 196 0088 2C000000 		.4byte	0x2c
+ 197 008c 03       		.uleb128 0x3
+ 198 008d C0010000 		.4byte	.LASF12
+ 199 0091 03       		.byte	0x3
+ 200 0092 2C       		.byte	0x2c
+ 201 0093 4C000000 		.4byte	0x4c
+ 202 0097 02       		.uleb128 0x2
+ 203 0098 04       		.byte	0x4
+ 204 0099 04       		.byte	0x4
+ 205 009a 9C000000 		.4byte	.LASF13
+ 206 009e 02       		.uleb128 0x2
+ 207 009f 08       		.byte	0x8
+ 208 00a0 04       		.byte	0x4
+ 209 00a1 70010000 		.4byte	.LASF14
+ 210 00a5 02       		.uleb128 0x2
+ 211 00a6 01       		.byte	0x1
+ 212 00a7 08       		.byte	0x8
+ 213 00a8 DF010000 		.4byte	.LASF15
+ 214 00ac 02       		.uleb128 0x2
+ 215 00ad 08       		.byte	0x8
+ 216 00ae 04       		.byte	0x4
+ 217 00af FE010000 		.4byte	.LASF16
+ 218 00b3 02       		.uleb128 0x2
+ 219 00b4 04       		.byte	0x4
+ 220 00b5 07       		.byte	0x7
+ 221 00b6 C8010000 		.4byte	.LASF17
+ 222 00ba 05       		.uleb128 0x5
+ 223 00bb 04       		.byte	0x4
+ 224 00bc A5000000 		.4byte	0xa5
+ 225 00c0 06       		.uleb128 0x6
+ 226 00c1 AA010000 		.4byte	.LASF26
+ 227 00c5 01       		.byte	0x1
+ 228 00c6 13       		.byte	0x13
+ 229 00c7 00000000 		.4byte	.LFB64
+ 230 00cb 6C000000 		.4byte	.LFE64-.LFB64
+ 231 00cf 01       		.uleb128 0x1
+ 232 00d0 9C       		.byte	0x9c
+ 233 00d1 5B010000 		.4byte	0x15b
+ 234 00d5 07       		.uleb128 0x7
+ 235 00d6 95000000 		.4byte	.LASF18
+ 236 00da 01       		.byte	0x1
+ 237 00db 13       		.byte	0x13
+ 238 00dc BA000000 		.4byte	0xba
+ 239 00e0 00000000 		.4byte	.LLST0
+ 240 00e4 07       		.uleb128 0x7
+ 241 00e5 77010000 		.4byte	.LASF19
+ 242 00e9 01       		.byte	0x1
+ 243 00ea 13       		.byte	0x13
+ 244 00eb 81000000 		.4byte	0x81
+ 245 00ef 2C000000 		.4byte	.LLST1
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 6
+
+
+ 246 00f3 07       		.uleb128 0x7
+ 247 00f4 B9010000 		.4byte	.LASF20
+ 248 00f8 01       		.byte	0x1
+ 249 00f9 13       		.byte	0x13
+ 250 00fa 81000000 		.4byte	0x81
+ 251 00fe 4D000000 		.4byte	.LLST2
+ 252 0102 08       		.uleb128 0x8
+ 253 0103 8D000000 		.4byte	.LASF21
+ 254 0107 01       		.byte	0x1
+ 255 0108 15       		.byte	0x15
+ 256 0109 5B010000 		.4byte	0x15b
+ 257 010d 02       		.uleb128 0x2
+ 258 010e 91       		.byte	0x91
+ 259 010f 60       		.sleb128 -32
+ 260 0110 09       		.uleb128 0x9
+ 261 0111 7E010000 		.4byte	0x17e
+ 262 0115 6E000000 		.4byte	.LLST3
+ 263 0119 0A       		.uleb128 0xa
+ 264 011a 73747200 		.ascii	"str\000"
+ 265 011e 01       		.byte	0x1
+ 266 011f 15       		.byte	0x15
+ 267 0120 6B010000 		.4byte	0x16b
+ 268 0124 90000000 		.4byte	.LLST4
+ 269 0128 08       		.uleb128 0x8
+ 270 0129 EE010000 		.4byte	.LASF22
+ 271 012d 01       		.byte	0x1
+ 272 012e 15       		.byte	0x15
+ 273 012f 83010000 		.4byte	0x183
+ 274 0133 03       		.uleb128 0x3
+ 275 0134 91       		.byte	0x91
+ 276 0135 E07D     		.sleb128 -288
+ 277 0137 0A       		.uleb128 0xa
+ 278 0138 6900     		.ascii	"i\000"
+ 279 013a 01       		.byte	0x1
+ 280 013b 16       		.byte	0x16
+ 281 013c 81000000 		.4byte	0x81
+ 282 0140 B0000000 		.4byte	.LLST5
+ 283 0144 0B       		.uleb128 0xb
+ 284 0145 5E000000 		.4byte	.LVL11
+ 285 0149 A4010000 		.4byte	0x1a4
+ 286 014d 0C       		.uleb128 0xc
+ 287 014e 01       		.uleb128 0x1
+ 288 014f 50       		.byte	0x50
+ 289 0150 02       		.uleb128 0x2
+ 290 0151 77       		.byte	0x77
+ 291 0152 10       		.sleb128 16
+ 292 0153 0C       		.uleb128 0xc
+ 293 0154 01       		.uleb128 0x1
+ 294 0155 51       		.byte	0x51
+ 295 0156 02       		.uleb128 0x2
+ 296 0157 08       		.byte	0x8
+ 297 0158 FF       		.byte	0xff
+ 298 0159 00       		.byte	0
+ 299 015a 00       		.byte	0
+ 300 015b 0D       		.uleb128 0xd
+ 301 015c A5000000 		.4byte	0xa5
+ 302 0160 6B010000 		.4byte	0x16b
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 7
+
+
+ 303 0164 0E       		.uleb128 0xe
+ 304 0165 B3000000 		.4byte	0xb3
+ 305 0169 04       		.byte	0x4
+ 306 016a 00       		.byte	0
+ 307 016b 0D       		.uleb128 0xd
+ 308 016c A5000000 		.4byte	0xa5
+ 309 0170 7E010000 		.4byte	0x17e
+ 310 0174 0F       		.uleb128 0xf
+ 311 0175 B3000000 		.4byte	0xb3
+ 312 0179 10010000 		.4byte	0x110
+ 313 017d 00       		.byte	0
+ 314 017e 10       		.uleb128 0x10
+ 315 017f B3000000 		.4byte	0xb3
+ 316 0183 0D       		.uleb128 0xd
+ 317 0184 A5000000 		.4byte	0xa5
+ 318 0188 93010000 		.4byte	0x193
+ 319 018c 0E       		.uleb128 0xe
+ 320 018d B3000000 		.4byte	0xb3
+ 321 0191 FE       		.byte	0xfe
+ 322 0192 00       		.byte	0
+ 323 0193 11       		.uleb128 0x11
+ 324 0194 63010000 		.4byte	.LASF27
+ 325 0198 04       		.byte	0x4
+ 326 0199 1207     		.2byte	0x712
+ 327 019b 9F010000 		.4byte	0x19f
+ 328 019f 12       		.uleb128 0x12
+ 329 01a0 8C000000 		.4byte	0x8c
+ 330 01a4 13       		.uleb128 0x13
+ 331 01a5 84000000 		.4byte	.LASF28
+ 332 01a9 84000000 		.4byte	.LASF28
+ 333 01ad 05       		.byte	0x5
+ 334 01ae FD       		.byte	0xfd
+ 335 01af 00       		.byte	0
+ 336              		.section	.debug_abbrev,"",%progbits
+ 337              	.Ldebug_abbrev0:
+ 338 0000 01       		.uleb128 0x1
+ 339 0001 11       		.uleb128 0x11
+ 340 0002 01       		.byte	0x1
+ 341 0003 25       		.uleb128 0x25
+ 342 0004 0E       		.uleb128 0xe
+ 343 0005 13       		.uleb128 0x13
+ 344 0006 0B       		.uleb128 0xb
+ 345 0007 03       		.uleb128 0x3
+ 346 0008 0E       		.uleb128 0xe
+ 347 0009 1B       		.uleb128 0x1b
+ 348 000a 0E       		.uleb128 0xe
+ 349 000b 55       		.uleb128 0x55
+ 350 000c 17       		.uleb128 0x17
+ 351 000d 11       		.uleb128 0x11
+ 352 000e 01       		.uleb128 0x1
+ 353 000f 10       		.uleb128 0x10
+ 354 0010 17       		.uleb128 0x17
+ 355 0011 00       		.byte	0
+ 356 0012 00       		.byte	0
+ 357 0013 02       		.uleb128 0x2
+ 358 0014 24       		.uleb128 0x24
+ 359 0015 00       		.byte	0
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 8
+
+
+ 360 0016 0B       		.uleb128 0xb
+ 361 0017 0B       		.uleb128 0xb
+ 362 0018 3E       		.uleb128 0x3e
+ 363 0019 0B       		.uleb128 0xb
+ 364 001a 03       		.uleb128 0x3
+ 365 001b 0E       		.uleb128 0xe
+ 366 001c 00       		.byte	0
+ 367 001d 00       		.byte	0
+ 368 001e 03       		.uleb128 0x3
+ 369 001f 16       		.uleb128 0x16
+ 370 0020 00       		.byte	0
+ 371 0021 03       		.uleb128 0x3
+ 372 0022 0E       		.uleb128 0xe
+ 373 0023 3A       		.uleb128 0x3a
+ 374 0024 0B       		.uleb128 0xb
+ 375 0025 3B       		.uleb128 0x3b
+ 376 0026 0B       		.uleb128 0xb
+ 377 0027 49       		.uleb128 0x49
+ 378 0028 13       		.uleb128 0x13
+ 379 0029 00       		.byte	0
+ 380 002a 00       		.byte	0
+ 381 002b 04       		.uleb128 0x4
+ 382 002c 24       		.uleb128 0x24
+ 383 002d 00       		.byte	0
+ 384 002e 0B       		.uleb128 0xb
+ 385 002f 0B       		.uleb128 0xb
+ 386 0030 3E       		.uleb128 0x3e
+ 387 0031 0B       		.uleb128 0xb
+ 388 0032 03       		.uleb128 0x3
+ 389 0033 08       		.uleb128 0x8
+ 390 0034 00       		.byte	0
+ 391 0035 00       		.byte	0
+ 392 0036 05       		.uleb128 0x5
+ 393 0037 0F       		.uleb128 0xf
+ 394 0038 00       		.byte	0
+ 395 0039 0B       		.uleb128 0xb
+ 396 003a 0B       		.uleb128 0xb
+ 397 003b 49       		.uleb128 0x49
+ 398 003c 13       		.uleb128 0x13
+ 399 003d 00       		.byte	0
+ 400 003e 00       		.byte	0
+ 401 003f 06       		.uleb128 0x6
+ 402 0040 2E       		.uleb128 0x2e
+ 403 0041 01       		.byte	0x1
+ 404 0042 3F       		.uleb128 0x3f
+ 405 0043 19       		.uleb128 0x19
+ 406 0044 03       		.uleb128 0x3
+ 407 0045 0E       		.uleb128 0xe
+ 408 0046 3A       		.uleb128 0x3a
+ 409 0047 0B       		.uleb128 0xb
+ 410 0048 3B       		.uleb128 0x3b
+ 411 0049 0B       		.uleb128 0xb
+ 412 004a 27       		.uleb128 0x27
+ 413 004b 19       		.uleb128 0x19
+ 414 004c 11       		.uleb128 0x11
+ 415 004d 01       		.uleb128 0x1
+ 416 004e 12       		.uleb128 0x12
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 9
+
+
+ 417 004f 06       		.uleb128 0x6
+ 418 0050 40       		.uleb128 0x40
+ 419 0051 18       		.uleb128 0x18
+ 420 0052 9742     		.uleb128 0x2117
+ 421 0054 19       		.uleb128 0x19
+ 422 0055 01       		.uleb128 0x1
+ 423 0056 13       		.uleb128 0x13
+ 424 0057 00       		.byte	0
+ 425 0058 00       		.byte	0
+ 426 0059 07       		.uleb128 0x7
+ 427 005a 05       		.uleb128 0x5
+ 428 005b 00       		.byte	0
+ 429 005c 03       		.uleb128 0x3
+ 430 005d 0E       		.uleb128 0xe
+ 431 005e 3A       		.uleb128 0x3a
+ 432 005f 0B       		.uleb128 0xb
+ 433 0060 3B       		.uleb128 0x3b
+ 434 0061 0B       		.uleb128 0xb
+ 435 0062 49       		.uleb128 0x49
+ 436 0063 13       		.uleb128 0x13
+ 437 0064 02       		.uleb128 0x2
+ 438 0065 17       		.uleb128 0x17
+ 439 0066 00       		.byte	0
+ 440 0067 00       		.byte	0
+ 441 0068 08       		.uleb128 0x8
+ 442 0069 34       		.uleb128 0x34
+ 443 006a 00       		.byte	0
+ 444 006b 03       		.uleb128 0x3
+ 445 006c 0E       		.uleb128 0xe
+ 446 006d 3A       		.uleb128 0x3a
+ 447 006e 0B       		.uleb128 0xb
+ 448 006f 3B       		.uleb128 0x3b
+ 449 0070 0B       		.uleb128 0xb
+ 450 0071 49       		.uleb128 0x49
+ 451 0072 13       		.uleb128 0x13
+ 452 0073 02       		.uleb128 0x2
+ 453 0074 18       		.uleb128 0x18
+ 454 0075 00       		.byte	0
+ 455 0076 00       		.byte	0
+ 456 0077 09       		.uleb128 0x9
+ 457 0078 34       		.uleb128 0x34
+ 458 0079 00       		.byte	0
+ 459 007a 34       		.uleb128 0x34
+ 460 007b 19       		.uleb128 0x19
+ 461 007c 49       		.uleb128 0x49
+ 462 007d 13       		.uleb128 0x13
+ 463 007e 02       		.uleb128 0x2
+ 464 007f 17       		.uleb128 0x17
+ 465 0080 00       		.byte	0
+ 466 0081 00       		.byte	0
+ 467 0082 0A       		.uleb128 0xa
+ 468 0083 34       		.uleb128 0x34
+ 469 0084 00       		.byte	0
+ 470 0085 03       		.uleb128 0x3
+ 471 0086 08       		.uleb128 0x8
+ 472 0087 3A       		.uleb128 0x3a
+ 473 0088 0B       		.uleb128 0xb
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 10
+
+
+ 474 0089 3B       		.uleb128 0x3b
+ 475 008a 0B       		.uleb128 0xb
+ 476 008b 49       		.uleb128 0x49
+ 477 008c 13       		.uleb128 0x13
+ 478 008d 02       		.uleb128 0x2
+ 479 008e 17       		.uleb128 0x17
+ 480 008f 00       		.byte	0
+ 481 0090 00       		.byte	0
+ 482 0091 0B       		.uleb128 0xb
+ 483 0092 898201   		.uleb128 0x4109
+ 484 0095 01       		.byte	0x1
+ 485 0096 11       		.uleb128 0x11
+ 486 0097 01       		.uleb128 0x1
+ 487 0098 31       		.uleb128 0x31
+ 488 0099 13       		.uleb128 0x13
+ 489 009a 00       		.byte	0
+ 490 009b 00       		.byte	0
+ 491 009c 0C       		.uleb128 0xc
+ 492 009d 8A8201   		.uleb128 0x410a
+ 493 00a0 00       		.byte	0
+ 494 00a1 02       		.uleb128 0x2
+ 495 00a2 18       		.uleb128 0x18
+ 496 00a3 9142     		.uleb128 0x2111
+ 497 00a5 18       		.uleb128 0x18
+ 498 00a6 00       		.byte	0
+ 499 00a7 00       		.byte	0
+ 500 00a8 0D       		.uleb128 0xd
+ 501 00a9 01       		.uleb128 0x1
+ 502 00aa 01       		.byte	0x1
+ 503 00ab 49       		.uleb128 0x49
+ 504 00ac 13       		.uleb128 0x13
+ 505 00ad 01       		.uleb128 0x1
+ 506 00ae 13       		.uleb128 0x13
+ 507 00af 00       		.byte	0
+ 508 00b0 00       		.byte	0
+ 509 00b1 0E       		.uleb128 0xe
+ 510 00b2 21       		.uleb128 0x21
+ 511 00b3 00       		.byte	0
+ 512 00b4 49       		.uleb128 0x49
+ 513 00b5 13       		.uleb128 0x13
+ 514 00b6 2F       		.uleb128 0x2f
+ 515 00b7 0B       		.uleb128 0xb
+ 516 00b8 00       		.byte	0
+ 517 00b9 00       		.byte	0
+ 518 00ba 0F       		.uleb128 0xf
+ 519 00bb 21       		.uleb128 0x21
+ 520 00bc 00       		.byte	0
+ 521 00bd 49       		.uleb128 0x49
+ 522 00be 13       		.uleb128 0x13
+ 523 00bf 2F       		.uleb128 0x2f
+ 524 00c0 13       		.uleb128 0x13
+ 525 00c1 00       		.byte	0
+ 526 00c2 00       		.byte	0
+ 527 00c3 10       		.uleb128 0x10
+ 528 00c4 26       		.uleb128 0x26
+ 529 00c5 00       		.byte	0
+ 530 00c6 49       		.uleb128 0x49
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 11
+
+
+ 531 00c7 13       		.uleb128 0x13
+ 532 00c8 00       		.byte	0
+ 533 00c9 00       		.byte	0
+ 534 00ca 11       		.uleb128 0x11
+ 535 00cb 34       		.uleb128 0x34
+ 536 00cc 00       		.byte	0
+ 537 00cd 03       		.uleb128 0x3
+ 538 00ce 0E       		.uleb128 0xe
+ 539 00cf 3A       		.uleb128 0x3a
+ 540 00d0 0B       		.uleb128 0xb
+ 541 00d1 3B       		.uleb128 0x3b
+ 542 00d2 05       		.uleb128 0x5
+ 543 00d3 49       		.uleb128 0x49
+ 544 00d4 13       		.uleb128 0x13
+ 545 00d5 3F       		.uleb128 0x3f
+ 546 00d6 19       		.uleb128 0x19
+ 547 00d7 3C       		.uleb128 0x3c
+ 548 00d8 19       		.uleb128 0x19
+ 549 00d9 00       		.byte	0
+ 550 00da 00       		.byte	0
+ 551 00db 12       		.uleb128 0x12
+ 552 00dc 35       		.uleb128 0x35
+ 553 00dd 00       		.byte	0
+ 554 00de 49       		.uleb128 0x49
+ 555 00df 13       		.uleb128 0x13
+ 556 00e0 00       		.byte	0
+ 557 00e1 00       		.byte	0
+ 558 00e2 13       		.uleb128 0x13
+ 559 00e3 2E       		.uleb128 0x2e
+ 560 00e4 00       		.byte	0
+ 561 00e5 3F       		.uleb128 0x3f
+ 562 00e6 19       		.uleb128 0x19
+ 563 00e7 3C       		.uleb128 0x3c
+ 564 00e8 19       		.uleb128 0x19
+ 565 00e9 6E       		.uleb128 0x6e
+ 566 00ea 0E       		.uleb128 0xe
+ 567 00eb 03       		.uleb128 0x3
+ 568 00ec 0E       		.uleb128 0xe
+ 569 00ed 3A       		.uleb128 0x3a
+ 570 00ee 0B       		.uleb128 0xb
+ 571 00ef 3B       		.uleb128 0x3b
+ 572 00f0 0B       		.uleb128 0xb
+ 573 00f1 00       		.byte	0
+ 574 00f2 00       		.byte	0
+ 575 00f3 00       		.byte	0
+ 576              		.section	.debug_loc,"",%progbits
+ 577              	.Ldebug_loc0:
+ 578              	.LLST0:
+ 579 0000 00000000 		.4byte	.LVL0
+ 580 0004 12000000 		.4byte	.LVL2
+ 581 0008 0100     		.2byte	0x1
+ 582 000a 50       		.byte	0x50
+ 583 000b 12000000 		.4byte	.LVL2
+ 584 000f 5D000000 		.4byte	.LVL11-1
+ 585 0013 0100     		.2byte	0x1
+ 586 0015 5E       		.byte	0x5e
+ 587 0016 5D000000 		.4byte	.LVL11-1
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 12
+
+
+ 588 001a 6C000000 		.4byte	.LFE64
+ 589 001e 0400     		.2byte	0x4
+ 590 0020 F3       		.byte	0xf3
+ 591 0021 01       		.uleb128 0x1
+ 592 0022 50       		.byte	0x50
+ 593 0023 9F       		.byte	0x9f
+ 594 0024 00000000 		.4byte	0
+ 595 0028 00000000 		.4byte	0
+ 596              	.LLST1:
+ 597 002c 00000000 		.4byte	.LVL0
+ 598 0030 12000000 		.4byte	.LVL2
+ 599 0034 0100     		.2byte	0x1
+ 600 0036 51       		.byte	0x51
+ 601 0037 12000000 		.4byte	.LVL2
+ 602 003b 6C000000 		.4byte	.LFE64
+ 603 003f 0400     		.2byte	0x4
+ 604 0041 F3       		.byte	0xf3
+ 605 0042 01       		.uleb128 0x1
+ 606 0043 51       		.byte	0x51
+ 607 0044 9F       		.byte	0x9f
+ 608 0045 00000000 		.4byte	0
+ 609 0049 00000000 		.4byte	0
+ 610              	.LLST2:
+ 611 004d 00000000 		.4byte	.LVL0
+ 612 0051 0E000000 		.4byte	.LVL1
+ 613 0055 0100     		.2byte	0x1
+ 614 0057 52       		.byte	0x52
+ 615 0058 0E000000 		.4byte	.LVL1
+ 616 005c 6C000000 		.4byte	.LFE64
+ 617 0060 0400     		.2byte	0x4
+ 618 0062 F3       		.byte	0xf3
+ 619 0063 01       		.uleb128 0x1
+ 620 0064 52       		.byte	0x52
+ 621 0065 9F       		.byte	0x9f
+ 622 0066 00000000 		.4byte	0
+ 623 006a 00000000 		.4byte	0
+ 624              	.LLST3:
+ 625 006e 1E000000 		.4byte	.LVL3
+ 626 0072 40000000 		.4byte	.LVL8
+ 627 0076 0300     		.2byte	0x3
+ 628 0078 74       		.byte	0x74
+ 629 0079 03       		.sleb128 3
+ 630 007a 9F       		.byte	0x9f
+ 631 007b 40000000 		.4byte	.LVL8
+ 632 007f 66000000 		.4byte	.LVL13
+ 633 0083 0300     		.2byte	0x3
+ 634 0085 76       		.byte	0x76
+ 635 0086 03       		.sleb128 3
+ 636 0087 9F       		.byte	0x9f
+ 637 0088 00000000 		.4byte	0
+ 638 008c 00000000 		.4byte	0
+ 639              	.LLST4:
+ 640 0090 2C000000 		.4byte	.LVL4
+ 641 0094 5D000000 		.4byte	.LVL11-1
+ 642 0098 0200     		.2byte	0x2
+ 643 009a 72       		.byte	0x72
+ 644 009b 00       		.sleb128 0
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 13
+
+
+ 645 009c 5D000000 		.4byte	.LVL11-1
+ 646 00a0 64000000 		.4byte	.LVL12
+ 647 00a4 0200     		.2byte	0x2
+ 648 00a6 7D       		.byte	0x7d
+ 649 00a7 00       		.sleb128 0
+ 650 00a8 00000000 		.4byte	0
+ 651 00ac 00000000 		.4byte	0
+ 652              	.LLST5:
+ 653 00b0 2C000000 		.4byte	.LVL4
+ 654 00b4 30000000 		.4byte	.LVL5
+ 655 00b8 0200     		.2byte	0x2
+ 656 00ba 30       		.byte	0x30
+ 657 00bb 9F       		.byte	0x9f
+ 658 00bc 30000000 		.4byte	.LVL5
+ 659 00c0 38000000 		.4byte	.LVL6
+ 660 00c4 0100     		.2byte	0x1
+ 661 00c6 51       		.byte	0x51
+ 662 00c7 3A000000 		.4byte	.LVL7
+ 663 00cb 40000000 		.4byte	.LVL8
+ 664 00cf 0100     		.2byte	0x1
+ 665 00d1 51       		.byte	0x51
+ 666 00d2 40000000 		.4byte	.LVL8
+ 667 00d6 50000000 		.4byte	.LVL9
+ 668 00da 0100     		.2byte	0x1
+ 669 00dc 54       		.byte	0x54
+ 670 00dd 52000000 		.4byte	.LVL10
+ 671 00e1 66000000 		.4byte	.LVL13
+ 672 00e5 0100     		.2byte	0x1
+ 673 00e7 54       		.byte	0x54
+ 674 00e8 00000000 		.4byte	0
+ 675 00ec 00000000 		.4byte	0
+ 676              		.section	.debug_aranges,"",%progbits
+ 677 0000 1C000000 		.4byte	0x1c
+ 678 0004 0200     		.2byte	0x2
+ 679 0006 00000000 		.4byte	.Ldebug_info0
+ 680 000a 04       		.byte	0x4
+ 681 000b 00       		.byte	0
+ 682 000c 0000     		.2byte	0
+ 683 000e 0000     		.2byte	0
+ 684 0010 00000000 		.4byte	.LFB64
+ 685 0014 6C000000 		.4byte	.LFE64-.LFB64
+ 686 0018 00000000 		.4byte	0
+ 687 001c 00000000 		.4byte	0
+ 688              		.section	.debug_ranges,"",%progbits
+ 689              	.Ldebug_ranges0:
+ 690 0000 00000000 		.4byte	.LFB64
+ 691 0004 6C000000 		.4byte	.LFE64
+ 692 0008 00000000 		.4byte	0
+ 693 000c 00000000 		.4byte	0
+ 694              		.section	.debug_line,"",%progbits
+ 695              	.Ldebug_line0:
+ 696 0000 F4010000 		.section	.debug_str,"MS",%progbits,1
+ 696      0200B901 
+ 696      00000201 
+ 696      FB0E0D00 
+ 696      01010101 
+ 697              	.LASF24:
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 14
+
+
+ 698 0000 43757374 		.ascii	"CustomPrint.c\000"
+ 698      6F6D5072 
+ 698      696E742E 
+ 698      6300
+ 699              	.LASF25:
+ 700 000e 433A5C55 		.ascii	"C:\\Users\\mathias\\Documents\\Uni\\2sem\\GFV\\Afle"
+ 700      73657273 
+ 700      5C6D6174 
+ 700      68696173 
+ 700      5C446F63 
+ 701 003a 76657269 		.ascii	"vering2\\GFVAflevering2\\Project\\Lab2\\Opgave1_I2C"
+ 701      6E67325C 
+ 701      47465641 
+ 701      666C6576 
+ 701      6572696E 
+ 702 0069 2E637964 		.ascii	".cydsn\000"
+ 702      736E00
+ 703              	.LASF4:
+ 704 0070 5F5F7569 		.ascii	"__uint8_t\000"
+ 704      6E74385F 
+ 704      7400
+ 705              	.LASF5:
+ 706 007a 5F5F696E 		.ascii	"__int32_t\000"
+ 706      7433325F 
+ 706      7400
+ 707              	.LASF28:
+ 708 0084 736E7072 		.ascii	"snprintf\000"
+ 708      696E7466 
+ 708      00
+ 709              	.LASF21:
+ 710 008d 636F6E43 		.ascii	"conChar\000"
+ 710      68617200 
+ 711              	.LASF18:
+ 712 0095 73747269 		.ascii	"string\000"
+ 712      6E6700
+ 713              	.LASF13:
+ 714 009c 666C6F61 		.ascii	"float\000"
+ 714      7400
+ 715              	.LASF1:
+ 716 00a2 756E7369 		.ascii	"unsigned char\000"
+ 716      676E6564 
+ 716      20636861 
+ 716      7200
+ 717              	.LASF23:
+ 718 00b0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 718      43313120 
+ 718      352E342E 
+ 718      31203230 
+ 718      31363036 
+ 719 00e3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 719      20726576 
+ 719      6973696F 
+ 719      6E203233 
+ 719      37373135 
+ 720 0116 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 720      66756E63 
+ 720      74696F6E 
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 15
+
+
+ 720      2D736563 
+ 720      74696F6E 
+ 721              	.LASF7:
+ 722 013e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 722      20756E73 
+ 722      69676E65 
+ 722      6420696E 
+ 722      7400
+ 723              	.LASF3:
+ 724 0150 73686F72 		.ascii	"short unsigned int\000"
+ 724      7420756E 
+ 724      7369676E 
+ 724      65642069 
+ 724      6E7400
+ 725              	.LASF27:
+ 726 0163 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 726      52784275 
+ 726      66666572 
+ 726      00
+ 727              	.LASF14:
+ 728 0170 646F7562 		.ascii	"double\000"
+ 728      6C6500
+ 729              	.LASF19:
+ 730 0177 7374724C 		.ascii	"strLen\000"
+ 730      656E00
+ 731              	.LASF10:
+ 732 017e 756E7369 		.ascii	"unsigned int\000"
+ 732      676E6564 
+ 732      20696E74 
+ 732      00
+ 733              	.LASF9:
+ 734 018b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 734      206C6F6E 
+ 734      6720756E 
+ 734      7369676E 
+ 734      65642069 
+ 735              	.LASF11:
+ 736 01a2 75696E74 		.ascii	"uint8_t\000"
+ 736      385F7400 
+ 737              	.LASF26:
+ 738 01aa 5072696E 		.ascii	"PrintStringInt\000"
+ 738      74537472 
+ 738      696E6749 
+ 738      6E7400
+ 739              	.LASF20:
+ 740 01b9 6E756D62 		.ascii	"number\000"
+ 740      657200
+ 741              	.LASF12:
+ 742 01c0 696E7433 		.ascii	"int32_t\000"
+ 742      325F7400 
+ 743              	.LASF17:
+ 744 01c8 73697A65 		.ascii	"sizetype\000"
+ 744      74797065 
+ 744      00
+ 745              	.LASF8:
+ 746 01d1 6C6F6E67 		.ascii	"long long int\000"
+ 746      206C6F6E 
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\cczn5PxH.s 			page 16
+
+
+ 746      6720696E 
+ 746      7400
+ 747              	.LASF15:
+ 748 01df 63686172 		.ascii	"char\000"
+ 748      00
+ 749              	.LASF2:
+ 750 01e4 73686F72 		.ascii	"short int\000"
+ 750      7420696E 
+ 750      7400
+ 751              	.LASF22:
+ 752 01ee 62756666 		.ascii	"buffer\000"
+ 752      657200
+ 753              	.LASF6:
+ 754 01f5 6C6F6E67 		.ascii	"long int\000"
+ 754      20696E74 
+ 754      00
+ 755              	.LASF16:
+ 756 01fe 6C6F6E67 		.ascii	"long double\000"
+ 756      20646F75 
+ 756      626C6500 
+ 757              	.LASF0:
+ 758 020a 7369676E 		.ascii	"signed char\000"
+ 758      65642063 
+ 758      68617200 
+ 759              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

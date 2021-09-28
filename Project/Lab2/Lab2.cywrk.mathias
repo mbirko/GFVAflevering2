@@ -180,6 +180,10 @@
 <Unloaded />
 <OpenDocs>
 <name v=".\Opgave1_I2C.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Opgave1_I2C.cydsn\Opgave1_I2C.cydwr" />
+<name v=".\Opgave1_I2C.cydsn\main.c" />
+<name v=".\Opgave1_I2C.cydsn\CustomPrint.c" />
+<name v=".\Opgave1_I2C.cydsn\CustomPrint.h" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -187,7 +191,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1156, 684" SelectedTabbedMdiWindow="2acecad4-11aa-4844-a027-f302fca8a51e"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="51634b55-4d7b-4426-8eec-d42e171340a5" /><DocumentWindow Key="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\ProjectI2C\Lab2\Opgave1_I2C.cydsn\TopDesign\TopDesign.cysch" Guid="2acecad4-11aa-4844-a027-f302fca8a51e" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="849, 675" SelectedTabbedMdiWindow="d9359648-10e1-420c-88e6-c12d4cfc29a5"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="51634b55-4d7b-4426-8eec-d42e171340a5" /><DocumentWindow Key="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\TopDesign\TopDesign.cysch" Guid="5c96d1ed-19e7-4869-a244-a6e7b7c003b8" /><DocumentWindow Key="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cydwr" Guid="4ad18260-de8a-4939-8d74-90366a1fe3a6" /><DocumentWindow Key="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\main.c" Guid="d9359648-10e1-420c-88e6-c12d4cfc29a5" /><DocumentWindow Key="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\CustomPrint.c" Guid="ef721224-285f-4085-b9d6-1437524dc784" /><DocumentWindow Key="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\CustomPrint.h" Guid="ff9cb0cf-3c7f-484e-aad3-576d0fdfc92d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

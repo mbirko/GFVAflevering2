@@ -10,6 +10,7 @@
  * ========================================
 */
 #include "project.h"
+#include <stdint.h>
 
 //interubt service rutines prototypes 
 CY_ISR_PROTO (UART_Rx_CT_Handeler);
@@ -27,6 +28,8 @@ int main(void)
 
     for(;;)
     {
+        uint8_t status;
+        status = I2C_M_MasterSendStart(0b1001000, 0); 
         /* Place your application code here. */
     }
 }

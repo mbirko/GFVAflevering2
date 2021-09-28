@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Sep 28 2021 13:05:30
+#File Generated:     Sep 28 2021 13:37:39
 
 #Purpose:            
 
@@ -92,7 +92,7 @@ Clock: UART_CT_IntClock     | Frequency:  53.6 MHz | Target:   0.5 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.1 (sec)
+D2088: Phase 6, elapsed time : 0.0 (sec)
 
 Phase 7
 ######################################################################
@@ -179,7 +179,7 @@ Clock: UART_CT_IntClock     | Frequency:   2.7 MHz | Target:   0.5 MHz
                      End of Clock Summary
 ######################################################################
 
-D2088: Phase 6, elapsed time : 0.1 (sec)
+D2088: Phase 6, elapsed time : 0.0 (sec)
 
 Phase 7
 ######################################################################
@@ -245,5 +245,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 2.8 sec.
+I2076: Total run-time: 2.7 sec.
 

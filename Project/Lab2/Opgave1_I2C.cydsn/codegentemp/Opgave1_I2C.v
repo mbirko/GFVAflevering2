@@ -1,6 +1,6 @@
 // ======================================================================
 // Opgave1_I2C.v generated from TopDesign.cysch
-// 09/28/2021 at 13:05
+// 09/28/2021 at 13:37
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 

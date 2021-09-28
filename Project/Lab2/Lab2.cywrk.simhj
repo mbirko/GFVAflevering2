@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab2\Opgave1_I2C\Source Files\main.c">
+<ExpandedNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\TopDesign</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Pins</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Analog</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Clocks</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Interrupts</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\DMA</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\System</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Directives</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Flash Security</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\EEPROM</v>
+<v>Lab2\Opgave1_I2C\Header Files</v>
+<v>Lab2\Opgave1_I2C\Header Files\CustomPrint.h</v>
+<v>Lab2\Opgave1_I2C\Header Files\cyapicallbacks.h</v>
+<v>Lab2\Opgave1_I2C\Source Files</v>
+<v>Lab2\Opgave1_I2C\Source Files\CustomPrint.c</v>
+<v>Lab2\Opgave1_I2C\Source Files\main.c</v>
+<v>Lab2\Opgave1_I2C\Generated_Source</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\TopDesign</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Pins</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Analog</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Clocks</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Interrupts</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\DMA</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\System</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Directives</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\Flash Security</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.cydwr\EEPROM</v>
+<v>Lab2\Opgave1_I2C\Header Files</v>
+<v>Lab2\Opgave1_I2C\Header Files\CustomPrint.h</v>
+<v>Lab2\Opgave1_I2C\Header Files\cyapicallbacks.h</v>
+<v>Lab2\Opgave1_I2C\Source Files</v>
+<v>Lab2\Opgave1_I2C\Source Files\CustomPrint.c</v>
+<v>Lab2\Opgave1_I2C\Source Files\main.c</v>
+<v>Lab2\Opgave1_I2C\Generated_Source</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\Clock_1</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cy_boot</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\I2C_M</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\isr_UART_CT</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\RST_1</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\SCL_M</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\SDA_M</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\UART_CT</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\UART_CT_IntClock</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydevice.h</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cyfitter.h</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>Lab2\Opgave1_I2C\Generated_Source\PSoC5\cyfitteriar.inc</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\TopDesign</v>
+<v>Lab2\Opgave1_I2C\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\TopDesign</v>
+<v>Lab2\Opgave1_I2C\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\CortexM3</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CustomPrint.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_BOOT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_INT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_MASTER.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_PM.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_SLAVE.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART_CT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\RST_1.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\SDA_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_BOOT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_INT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_IntClock.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_PM.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.elf</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.hex</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.map</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.gpdsc</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.rpt</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\CortexM3</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CustomPrint.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_BOOT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_INT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_MASTER.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_PM.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_SLAVE.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART_CT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\RST_1.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\SDA_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_BOOT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_INT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_IntClock.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_PM.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.elf</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.hex</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.map</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.gpdsc</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.rpt</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\PSoC 5LP Architecture TRM</v>
+<v>Lab2\Opgave1_I2C\CY8C58LP Family Datasheet</v>
+<v>Lab2\Opgave1_I2C\System Reference Guides</v>
+<v>Lab2\Opgave1_I2C\System Reference Guides\cy_boot_v6_0</v>
+<v>Lab2\Opgave1_I2C\cy_clock_v2_20.pdf</v>
+<v>Lab2\Opgave1_I2C\cy_isr_v1_70.pdf</v>
+<v>Lab2\Opgave1_I2C\cy_pins_v2_20</v>
+<v>Lab2\Opgave1_I2C\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Lab2\Opgave1_I2C\I2C_v3_50.pdf</v>
+<v>Lab2\Opgave1_I2C\UART_v2_50.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Lab2</v>
+<v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\PSoC 5LP Architecture TRM</v>
+<v>Lab2\Opgave1_I2C\CY8C58LP Family Datasheet</v>
+<v>Lab2\Opgave1_I2C\System Reference Guides</v>
+<v>Lab2\Opgave1_I2C\System Reference Guides\cy_boot_v6_0</v>
+<v>Lab2\Opgave1_I2C\cy_clock_v2_20.pdf</v>
+<v>Lab2\Opgave1_I2C\cy_isr_v1_70.pdf</v>
+<v>Lab2\Opgave1_I2C\cy_pins_v2_20</v>
+<v>Lab2\Opgave1_I2C\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>Lab2\Opgave1_I2C\I2C_v3_50.pdf</v>
+<v>Lab2\Opgave1_I2C\UART_v2_50.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1608, 711" SelectedTabbedMdiWindow="5ea556c7-183e-4ad2-b498-758139d96b9d"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="5ea556c7-183e-4ad2-b498-758139d96b9d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

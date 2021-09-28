@@ -1,3 +1,3 @@
-# Component constraints for G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\TopDesign\TopDesign.cysch
-# Project: G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj
-# Date: Tue, 28 Sep 2021 11:05:19 GMT
+# Component constraints for C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\TopDesign\TopDesign.cysch
+# Project: C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj
+# Date: Tue, 28 Sep 2021 11:13:39 GMT

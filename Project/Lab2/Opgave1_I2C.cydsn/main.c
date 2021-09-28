@@ -49,6 +49,7 @@ CY_ISR (UART_Rx_CT_Handeler)
             case 't' :             
             {
                 UART_CT_PutString("test!\r\n");
+                 PrintStringFloat("int", 3, 7);
             }
             break;
             case 'i' :             

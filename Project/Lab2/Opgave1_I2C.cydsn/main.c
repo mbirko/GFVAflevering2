@@ -10,6 +10,7 @@
  * ========================================
 */
 #include "project.h"
+#include <stdint.h>
 #include "CustomPrint.h"
 
 //interubt service rutines prototypes 
@@ -28,7 +29,24 @@ int main(void)
 
     for(;;)
     {
-        /* Place your application code here. */
+        uint8_t status;
+        status = I2C_M_MasterSendStart(0x48, 1); 
+        if (status == I2C_M_MSTR_NO_ERROR)
+        {
+            uint8_t b1 = I2C_M_MasterReadByte(I2C_M_ACK_DATA);
+            uint8_t b2 = I2C_M_MasterReadByte(I2C_M_NAK_DATA);
+            
+            I2C_M_MasterSendStop();
+            
+            uint16_t temp = ((b1 << 8) + b2);
+            // Convert to celcius
+            // Send to UART
+        }
+        else
+        {
+            PrintStringInt("Fejl: ", 9, status);
+            I2C_M_MasterSendStop();
+        }
     }
 }
 

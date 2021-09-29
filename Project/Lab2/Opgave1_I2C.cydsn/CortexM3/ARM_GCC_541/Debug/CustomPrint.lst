@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 1
 
 
    1              		.syntax unified
@@ -45,11 +45,10 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
   15:CustomPrint.c **** #include "project.h"
   16:CustomPrint.c **** #include "CustomPrint.h"
   17:CustomPrint.c **** #include <stdio.h>
-  18:CustomPrint.c **** 
-  19:CustomPrint.c ****     //prints a sring followed by a interger number 
-  20:CustomPrint.c **** void PrintStringInt(char str[], uint8_t len, uint8_t num)
-  21:CustomPrint.c **** {
-  28              		.loc 1 21 0
+  18:CustomPrint.c ****     //prints a sring followed by a interger number 
+  19:CustomPrint.c **** void PrintStringInt(char str[], uint8_t len, uint8_t num)
+  20:CustomPrint.c **** {
+  28              		.loc 1 20 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 520
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -58,10 +57,10 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
   34              		.cfi_def_cfa_offset 20
   35              		.cfi_offset 4, -20
   36              		.cfi_offset 5, -16
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 2
-
-
   37              		.cfi_offset 6, -12
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 2
+
+
   38              		.cfi_offset 7, -8
   39              		.cfi_offset 14, -4
   40 0002 ADF5037D 		sub	sp, sp, #524
@@ -69,8 +68,8 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
   42 0006 0646     		mov	r6, r0
   43 0008 0D46     		mov	r5, r1
   44 000a 1746     		mov	r7, r2
-  22:CustomPrint.c **** 	char buffer[255], string[255] = { "" }, conchar[8] = { ": %d\r\n" };
-  45              		.loc 1 22 0
+  21:CustomPrint.c **** 	char buffer[255], string[255] = { "" }, conchar[8] = { ": %d\r\n" };
+  45              		.loc 1 21 0
   46 000c 0024     		movs	r4, #0
   47 000e 0294     		str	r4, [sp, #8]
   48 0010 FB22     		movs	r2, #251
@@ -89,62 +88,62 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
   61 0028 8DF80610 		strb	r1, [sp, #6]
   62 002c 8DF80740 		strb	r4, [sp, #7]
   63              	.LVL5:
-  23:CustomPrint.c **** 	uint8_t i = 0; 
-  24:CustomPrint.c **** 	for (i = 0; i < len; i++)
-  64              		.loc 1 24 0
+  22:CustomPrint.c **** 	uint8_t i = 0; 
+  23:CustomPrint.c **** 	for (i = 0; i < len; i++)
+  64              		.loc 1 23 0
   65 0030 2146     		mov	r1, r4
   66 0032 04E0     		b	.L2
   67              	.LVL6:
   68              	.L3:
-  25:CustomPrint.c **** 	{
-  26:CustomPrint.c **** 		string[i] = str[i]; 
-  69              		.loc 1 26 0 discriminator 3
+  24:CustomPrint.c **** 	{
+  25:CustomPrint.c **** 		string[i] = str[i]; 
+  69              		.loc 1 25 0 discriminator 3
   70 0034 725C     		ldrb	r2, [r6, r1]	@ zero_extendqisi2
   71 0036 02AB     		add	r3, sp, #8
   72 0038 5A54     		strb	r2, [r3, r1]
-  24:CustomPrint.c **** 	{
-  73              		.loc 1 24 0 discriminator 3
+  23:CustomPrint.c **** 	{
+  73              		.loc 1 23 0 discriminator 3
   74 003a 0131     		adds	r1, r1, #1
   75              	.LVL7:
   76 003c C9B2     		uxtb	r1, r1
   77              	.LVL8:
   78              	.L2:
-  24:CustomPrint.c **** 	{
-  79              		.loc 1 24 0 is_stmt 0 discriminator 1
+  23:CustomPrint.c **** 	{
+  79              		.loc 1 23 0 is_stmt 0 discriminator 1
   80 003e A942     		cmp	r1, r5
   81 0040 F8D3     		bcc	.L3
   82 0042 2B46     		mov	r3, r5
   83 0044 06E0     		b	.L4
   84              	.LVL9:
   85              	.L5:
-  27:CustomPrint.c **** 	}
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 3
+  26:CustomPrint.c **** 	}
+  27:CustomPrint.c **** 	for (i = len; i < len+8; i++)
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 3
 
 
-  28:CustomPrint.c **** 	for (i = len; i < len+8; i++)
-  29:CustomPrint.c **** 	{
-  30:CustomPrint.c **** 
-  31:CustomPrint.c **** 		string[i] = conchar[i-len];
-  86              		.loc 1 31 0 is_stmt 1 discriminator 3
+  28:CustomPrint.c **** 	{
+  29:CustomPrint.c **** 
+  30:CustomPrint.c **** 		string[i] = conchar[i-len];
+  86              		.loc 1 30 0 is_stmt 1 discriminator 3
   87 0046 5A1B     		subs	r2, r3, r5
   88 0048 1DF80210 		ldrb	r1, [sp, r2]	@ zero_extendqisi2
   89 004c 02AA     		add	r2, sp, #8
   90 004e D154     		strb	r1, [r2, r3]
-  28:CustomPrint.c **** 	{
-  91              		.loc 1 28 0 discriminator 3
+  27:CustomPrint.c **** 	{
+  91              		.loc 1 27 0 discriminator 3
   92 0050 0133     		adds	r3, r3, #1
   93              	.LVL10:
   94 0052 DBB2     		uxtb	r3, r3
   95              	.LVL11:
   96              	.L4:
-  28:CustomPrint.c **** 	{
-  97              		.loc 1 28 0 is_stmt 0 discriminator 1
+  27:CustomPrint.c **** 	{
+  97              		.loc 1 27 0 is_stmt 0 discriminator 1
   98 0054 05F10802 		add	r2, r5, #8
   99 0058 9342     		cmp	r3, r2
  100 005a F4DB     		blt	.L5
-  32:CustomPrint.c **** 	}
-  33:CustomPrint.c **** 	snprintf(buffer, sizeof(buffer), string, num);
- 101              		.loc 1 33 0 is_stmt 1
+  31:CustomPrint.c **** 	}
+  32:CustomPrint.c **** 	snprintf(buffer, sizeof(buffer), string, num);
+ 101              		.loc 1 32 0 is_stmt 1
  102 005c 3B46     		mov	r3, r7
  103              	.LVL12:
  104 005e 02AA     		add	r2, sp, #8
@@ -152,15 +151,15 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  106 0062 42A8     		add	r0, sp, #264
  107 0064 FFF7FEFF 		bl	snprintf
  108              	.LVL13:
-  34:CustomPrint.c ****     
-  35:CustomPrint.c ****     UART_CT_PutString(buffer);
- 109              		.loc 1 35 0
+  33:CustomPrint.c ****     
+  34:CustomPrint.c ****     UART_CT_PutString(buffer);
+ 109              		.loc 1 34 0
  110 0068 42A8     		add	r0, sp, #264
  111 006a FFF7FEFF 		bl	UART_CT_PutString
  112              	.LVL14:
-  36:CustomPrint.c **** return;
-  37:CustomPrint.c **** }
- 113              		.loc 1 37 0
+  35:CustomPrint.c **** return;
+  36:CustomPrint.c **** }
+ 113              		.loc 1 36 0
  114 006e 0DF5037D 		add	sp, sp, #524
  115              		.cfi_def_cfa_offset 20
  116              		@ sp needed
@@ -178,18 +177,18 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  128              		.align	2
  129              		.global	PrintStringFloat
  130              		.thumb
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 4
-
-
  131              		.thumb_func
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 4
+
+
  132              		.type	PrintStringFloat, %function
  133              	PrintStringFloat:
  134              	.LFB65:
-  38:CustomPrint.c **** 
-  39:CustomPrint.c ****     //prints a string followed by a float type number
-  40:CustomPrint.c **** void PrintStringFloat(char str[], uint8_t len, float num)
-  41:CustomPrint.c **** {
- 135              		.loc 1 41 0
+  37:CustomPrint.c **** 
+  38:CustomPrint.c ****     //prints a string followed by a float type number
+  39:CustomPrint.c **** void PrintStringFloat(char str[], uint8_t len, float num)
+  40:CustomPrint.c **** {
+ 135              		.loc 1 40 0
  136              		.cfi_startproc
  137              		@ args = 0, pretend = 0, frame = 520
  138              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -206,9 +205,8 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  149 0006 0646     		mov	r6, r0
  150 0008 0D46     		mov	r5, r1
  151 000a 1746     		mov	r7, r2
-  42:CustomPrint.c ****     
-  43:CustomPrint.c **** 	char buffer[255], string[255] = { "" }, conchar[8] = { ": %f\r\n" };
- 152              		.loc 1 43 0
+  41:CustomPrint.c **** 	char buffer[255], string[255] = { "" }, conchar[8] = { ": %f\r\n" };
+ 152              		.loc 1 41 0
  153 000c 0024     		movs	r4, #0
  154 000e 0494     		str	r4, [sp, #16]
  155 0010 FB22     		movs	r2, #251
@@ -227,63 +225,63 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  168 0028 8DF80E10 		strb	r1, [sp, #14]
  169 002c 8DF80F40 		strb	r4, [sp, #15]
  170              	.LVL21:
-  44:CustomPrint.c **** 	uint8_t i = 0; 
-  45:CustomPrint.c **** 	for (i = 0; i < len; i++)
- 171              		.loc 1 45 0
+  42:CustomPrint.c **** 	uint8_t i = 0; 
+  43:CustomPrint.c **** 	for (i = 0; i < len; i++)
+ 171              		.loc 1 43 0
  172 0030 2146     		mov	r1, r4
  173 0032 04E0     		b	.L10
  174              	.LVL22:
  175              	.L11:
-  46:CustomPrint.c **** 	{
-  47:CustomPrint.c **** 		string[i] = str[i]; 
- 176              		.loc 1 47 0 discriminator 3
+  44:CustomPrint.c **** 	{
+  45:CustomPrint.c **** 		string[i] = str[i]; 
+ 176              		.loc 1 45 0 discriminator 3
  177 0034 725C     		ldrb	r2, [r6, r1]	@ zero_extendqisi2
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 5
-
-
  178 0036 04AB     		add	r3, sp, #16
  179 0038 5A54     		strb	r2, [r3, r1]
-  45:CustomPrint.c **** 	{
- 180              		.loc 1 45 0 discriminator 3
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 5
+
+
+  43:CustomPrint.c **** 	{
+ 180              		.loc 1 43 0 discriminator 3
  181 003a 0131     		adds	r1, r1, #1
  182              	.LVL23:
  183 003c C9B2     		uxtb	r1, r1
  184              	.LVL24:
  185              	.L10:
-  45:CustomPrint.c **** 	{
- 186              		.loc 1 45 0 is_stmt 0 discriminator 1
+  43:CustomPrint.c **** 	{
+ 186              		.loc 1 43 0 is_stmt 0 discriminator 1
  187 003e A942     		cmp	r1, r5
  188 0040 F8D3     		bcc	.L11
  189 0042 2B46     		mov	r3, r5
  190 0044 06E0     		b	.L12
  191              	.LVL25:
  192              	.L13:
-  48:CustomPrint.c **** 	}
-  49:CustomPrint.c **** 	for (i = len; i < len+8; i++)
-  50:CustomPrint.c **** 	{
-  51:CustomPrint.c **** 
-  52:CustomPrint.c **** 		string[i] = conchar[i-len];
- 193              		.loc 1 52 0 is_stmt 1 discriminator 3
+  46:CustomPrint.c **** 	}
+  47:CustomPrint.c **** 	for (i = len; i < len+8; i++)
+  48:CustomPrint.c **** 	{
+  49:CustomPrint.c **** 
+  50:CustomPrint.c **** 		string[i] = conchar[i-len];
+ 193              		.loc 1 50 0 is_stmt 1 discriminator 3
  194 0046 5A1B     		subs	r2, r3, r5
  195 0048 02A9     		add	r1, sp, #8
  196 004a 895C     		ldrb	r1, [r1, r2]	@ zero_extendqisi2
  197 004c 04AA     		add	r2, sp, #16
  198 004e D154     		strb	r1, [r2, r3]
-  49:CustomPrint.c **** 	{
- 199              		.loc 1 49 0 discriminator 3
+  47:CustomPrint.c **** 	{
+ 199              		.loc 1 47 0 discriminator 3
  200 0050 0133     		adds	r3, r3, #1
  201              	.LVL26:
  202 0052 DBB2     		uxtb	r3, r3
  203              	.LVL27:
  204              	.L12:
-  49:CustomPrint.c **** 	{
- 205              		.loc 1 49 0 is_stmt 0 discriminator 1
+  47:CustomPrint.c **** 	{
+ 205              		.loc 1 47 0 is_stmt 0 discriminator 1
  206 0054 05F10802 		add	r2, r5, #8
  207 0058 9342     		cmp	r3, r2
  208 005a F4DB     		blt	.L13
-  53:CustomPrint.c **** 	}
-  54:CustomPrint.c **** 	snprintf(buffer, sizeof(buffer), string, num);
- 209              		.loc 1 54 0 is_stmt 1
+  51:CustomPrint.c **** 	}
+  52:CustomPrint.c **** 	snprintf(buffer, sizeof(buffer), string, num);
+ 209              		.loc 1 52 0 is_stmt 1
  210 005c 3846     		mov	r0, r7
  211 005e FFF7FEFF 		bl	__aeabi_f2d
  212              	.LVL28:
@@ -293,18 +291,18 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  216 006a 44A8     		add	r0, sp, #272
  217 006c FFF7FEFF 		bl	snprintf
  218              	.LVL29:
-  55:CustomPrint.c ****     
-  56:CustomPrint.c ****     UART_CT_PutString(buffer);
- 219              		.loc 1 56 0
+  53:CustomPrint.c ****     
+  54:CustomPrint.c ****     UART_CT_PutString(buffer);
+ 219              		.loc 1 54 0
  220 0070 44A8     		add	r0, sp, #272
  221 0072 FFF7FEFF 		bl	UART_CT_PutString
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 6
-
-
  222              	.LVL30:
-  57:CustomPrint.c ****     return;   
-  58:CustomPrint.c **** }
- 223              		.loc 1 58 0
+  55:CustomPrint.c ****     return;   
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 6
+
+
+  56:CustomPrint.c **** }
+ 223              		.loc 1 56 0
  224 0076 0DF5057D 		add	sp, sp, #532
  225              		.cfi_def_cfa_offset 20
  226              		@ sp needed
@@ -358,11 +356,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  272 002e 06       		.byte	0x6
  273 002f 0D020000 		.4byte	.LASF1
  274 0033 03       		.uleb128 0x3
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 7
-
-
  275 0034 70000000 		.4byte	.LASF5
  276 0038 02       		.byte	0x2
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 7
+
+
  277 0039 1D       		.byte	0x1d
  278 003a 3E000000 		.4byte	0x3e
  279 003e 02       		.uleb128 0x2
@@ -418,11 +416,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  329 009a 53000000 		.4byte	0x53
  330 009e 02       		.uleb128 0x2
  331 009f 08       		.byte	0x8
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 8
-
-
  332 00a0 04       		.byte	0x4
  333 00a1 81010000 		.4byte	.LASF14
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 8
+
+
  334 00a5 02       		.uleb128 0x2
  335 00a6 01       		.byte	0x1
  336 00a7 08       		.byte	0x8
@@ -448,7 +446,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  356 00d0 08       		.uleb128 0x8
  357 00d1 B4010000 		.4byte	.LASF21
  358 00d5 01       		.byte	0x1
- 359 00d6 14       		.byte	0x14
+ 359 00d6 13       		.byte	0x13
  360 00d7 00000000 		.4byte	.LFB64
  361 00db 78000000 		.4byte	.LFE64-.LFB64
  362 00df 01       		.uleb128 0x1
@@ -457,36 +455,36 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  365 00e5 09       		.uleb128 0x9
  366 00e6 73747200 		.ascii	"str\000"
  367 00ea 01       		.byte	0x1
- 368 00eb 14       		.byte	0x14
+ 368 00eb 13       		.byte	0x13
  369 00ec BA000000 		.4byte	0xba
  370 00f0 00000000 		.4byte	.LLST0
  371 00f4 09       		.uleb128 0x9
  372 00f5 6C656E00 		.ascii	"len\000"
  373 00f9 01       		.byte	0x1
- 374 00fa 14       		.byte	0x14
+ 374 00fa 13       		.byte	0x13
  375 00fb 88000000 		.4byte	0x88
  376 00ff 2C000000 		.4byte	.LLST1
  377 0103 09       		.uleb128 0x9
  378 0104 6E756D00 		.ascii	"num\000"
  379 0108 01       		.byte	0x1
- 380 0109 14       		.byte	0x14
+ 380 0109 13       		.byte	0x13
  381 010a 88000000 		.4byte	0x88
  382 010e 4D000000 		.4byte	.LLST2
  383 0112 0A       		.uleb128 0xa
  384 0113 F1010000 		.4byte	.LASF18
  385 0117 01       		.byte	0x1
- 386 0118 16       		.byte	0x16
+ 386 0118 15       		.byte	0x15
  387 0119 A7010000 		.4byte	0x1a7
  388 011d 03       		.uleb128 0x3
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 9
-
-
  389 011e 91       		.byte	0x91
  390 011f E87D     		.sleb128 -280
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 9
+
+
  391 0121 0A       		.uleb128 0xa
  392 0122 8D000000 		.4byte	.LASF19
  393 0126 01       		.byte	0x1
- 394 0127 16       		.byte	0x16
+ 394 0127 15       		.byte	0x15
  395 0128 A7010000 		.4byte	0x1a7
  396 012c 03       		.uleb128 0x3
  397 012d 91       		.byte	0x91
@@ -494,7 +492,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  399 0130 0A       		.uleb128 0xa
  400 0131 2A020000 		.4byte	.LASF20
  401 0135 01       		.byte	0x1
- 402 0136 16       		.byte	0x16
+ 402 0136 15       		.byte	0x15
  403 0137 C0000000 		.4byte	0xc0
  404 013b 03       		.uleb128 0x3
  405 013c 91       		.byte	0x91
@@ -502,7 +500,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  407 013f 0B       		.uleb128 0xb
  408 0140 6900     		.ascii	"i\000"
  409 0142 01       		.byte	0x1
- 410 0143 17       		.byte	0x17
+ 410 0143 16       		.byte	0x16
  411 0144 88000000 		.4byte	0x88
  412 0148 6E000000 		.4byte	.LLST3
  413 014c 0C       		.uleb128 0xc
@@ -538,11 +536,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  443 017d 03       		.uleb128 0x3
  444 017e 91       		.byte	0x91
  445 017f E87D     		.sleb128 -280
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 10
-
-
  446 0181 0D       		.uleb128 0xd
  447 0182 01       		.uleb128 0x1
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 10
+
+
  448 0183 51       		.byte	0x51
  449 0184 02       		.uleb128 0x2
  450 0185 08       		.byte	0x8
@@ -581,7 +579,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  483 01b7 0F       		.uleb128 0xf
  484 01b8 19020000 		.4byte	.LASF22
  485 01bc 01       		.byte	0x1
- 486 01bd 28       		.byte	0x28
+ 486 01bd 27       		.byte	0x27
  487 01be 00000000 		.4byte	.LFB65
  488 01c2 80000000 		.4byte	.LFE65-.LFB65
  489 01c6 01       		.uleb128 0x1
@@ -590,28 +588,28 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  492 01cc 09       		.uleb128 0x9
  493 01cd 73747200 		.ascii	"str\000"
  494 01d1 01       		.byte	0x1
- 495 01d2 28       		.byte	0x28
+ 495 01d2 27       		.byte	0x27
  496 01d3 BA000000 		.4byte	0xba
  497 01d7 AE000000 		.4byte	.LLST4
  498 01db 09       		.uleb128 0x9
  499 01dc 6C656E00 		.ascii	"len\000"
  500 01e0 01       		.byte	0x1
- 501 01e1 28       		.byte	0x28
+ 501 01e1 27       		.byte	0x27
  502 01e2 88000000 		.4byte	0x88
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 11
-
-
  503 01e6 DA000000 		.4byte	.LLST5
  504 01ea 09       		.uleb128 0x9
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 11
+
+
  505 01eb 6E756D00 		.ascii	"num\000"
  506 01ef 01       		.byte	0x1
- 507 01f0 28       		.byte	0x28
+ 507 01f0 27       		.byte	0x27
  508 01f1 25000000 		.4byte	0x25
  509 01f5 FB000000 		.4byte	.LLST6
  510 01f9 0A       		.uleb128 0xa
  511 01fa F1010000 		.4byte	.LASF18
  512 01fe 01       		.byte	0x1
- 513 01ff 2B       		.byte	0x2b
+ 513 01ff 29       		.byte	0x29
  514 0200 A7010000 		.4byte	0x1a7
  515 0204 03       		.uleb128 0x3
  516 0205 91       		.byte	0x91
@@ -619,7 +617,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  518 0208 0A       		.uleb128 0xa
  519 0209 8D000000 		.4byte	.LASF19
  520 020d 01       		.byte	0x1
- 521 020e 2B       		.byte	0x2b
+ 521 020e 29       		.byte	0x29
  522 020f A7010000 		.4byte	0x1a7
  523 0213 03       		.uleb128 0x3
  524 0214 91       		.byte	0x91
@@ -627,7 +625,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  526 0217 0A       		.uleb128 0xa
  527 0218 2A020000 		.4byte	.LASF20
  528 021c 01       		.byte	0x1
- 529 021d 2B       		.byte	0x2b
+ 529 021d 29       		.byte	0x29
  530 021e C0000000 		.4byte	0xc0
  531 0222 03       		.uleb128 0x3
  532 0223 91       		.byte	0x91
@@ -635,7 +633,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  534 0226 0B       		.uleb128 0xb
  535 0227 6900     		.ascii	"i\000"
  536 0229 01       		.byte	0x1
- 537 022a 2C       		.byte	0x2c
+ 537 022a 2A       		.byte	0x2a
  538 022b 88000000 		.4byte	0x88
  539 022f 29010000 		.4byte	.LLST7
  540 0233 0C       		.uleb128 0xc
@@ -658,11 +656,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  557 024e 01       		.uleb128 0x1
  558 024f 52       		.byte	0x52
  559 0250 02       		.uleb128 0x2
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 12
-
-
  560 0251 08       		.byte	0x8
  561 0252 FB       		.byte	0xfb
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 12
+
+
  562 0253 00       		.byte	0
  563 0254 0C       		.uleb128 0xc
  564 0255 70000000 		.4byte	.LVL29
@@ -718,11 +716,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  614 02b2 94000000 		.4byte	.LASF24
  615 02b6 05       		.byte	0x5
  616 02b7 8B       		.byte	0x8b
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 13
-
-
  617 02b8 00       		.byte	0
  618              		.section	.debug_abbrev,"",%progbits
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 13
+
+
  619              	.Ldebug_abbrev0:
  620 0000 01       		.uleb128 0x1
  621 0001 11       		.uleb128 0x11
@@ -778,11 +776,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  671 0033 08       		.uleb128 0x8
  672 0034 00       		.byte	0
  673 0035 00       		.byte	0
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 14
-
-
  674 0036 05       		.uleb128 0x5
  675 0037 0F       		.uleb128 0xf
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 14
+
+
  676 0038 00       		.byte	0
  677 0039 0B       		.uleb128 0xb
  678 003a 0B       		.uleb128 0xb
@@ -838,11 +836,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  728 006d 00       		.byte	0
  729 006e 03       		.uleb128 0x3
  730 006f 08       		.uleb128 0x8
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 15
-
-
  731 0070 3A       		.uleb128 0x3a
  732 0071 0B       		.uleb128 0xb
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 15
+
+
  733 0072 3B       		.uleb128 0x3b
  734 0073 0B       		.uleb128 0xb
  735 0074 49       		.uleb128 0x49
@@ -898,11 +896,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  785 00aa 02       		.uleb128 0x2
  786 00ab 18       		.uleb128 0x18
  787 00ac 9142     		.uleb128 0x2111
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 16
-
-
  788 00ae 18       		.uleb128 0x18
  789 00af 00       		.byte	0
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 16
+
+
  790 00b0 00       		.byte	0
  791 00b1 0E       		.uleb128 0xe
  792 00b2 898201   		.uleb128 0x4109
@@ -958,11 +956,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  842 00e7 11       		.uleb128 0x11
  843 00e8 35       		.uleb128 0x35
  844 00e9 00       		.byte	0
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 17
-
-
  845 00ea 49       		.uleb128 0x49
  846 00eb 13       		.uleb128 0x13
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 17
+
+
  847 00ec 00       		.byte	0
  848 00ed 00       		.byte	0
  849 00ee 12       		.uleb128 0x12
@@ -1018,11 +1016,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  899 0028 00000000 		.4byte	0
  900              	.LLST1:
  901 002c 00000000 		.4byte	.LVL0
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 18
-
-
  902 0030 14000000 		.4byte	.LVL2
  903 0034 0100     		.2byte	0x1
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 18
+
+
  904 0036 51       		.byte	0x51
  905 0037 14000000 		.4byte	.LVL2
  906 003b 78000000 		.4byte	.LFE64
@@ -1078,11 +1076,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  956 00b8 50       		.byte	0x50
  957 00b9 16000000 		.4byte	.LVL19
  958 00bd 7C000000 		.4byte	.LVL31
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 19
-
-
  959 00c1 0100     		.2byte	0x1
  960 00c3 56       		.byte	0x56
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 19
+
+
  961 00c4 7C000000 		.4byte	.LVL31
  962 00c8 80000000 		.4byte	.LFE65
  963 00cc 0400     		.2byte	0x4
@@ -1138,11 +1136,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  1013 013f 51       		.byte	0x51
  1014 0140 3E000000 		.4byte	.LVL24
  1015 0144 46000000 		.4byte	.LVL25
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 20
-
-
  1016 0148 0100     		.2byte	0x1
  1017 014a 51       		.byte	0x51
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 20
+
+
  1018 014b 46000000 		.4byte	.LVL25
  1019 014f 52000000 		.4byte	.LVL26
  1020 0153 0100     		.2byte	0x1
@@ -1198,11 +1196,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  1057      47465641 
  1057      666C6576 
  1057      6572696E 
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 21
-
-
  1058 0069 2E637964 		.ascii	".cydsn\000"
  1058      736E00
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 21
+
+
  1059              	.LASF5:
  1060 0070 5F5F7569 		.ascii	"__uint8_t\000"
  1060      6E74385F 
@@ -1258,11 +1256,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  1080 015a 73686F72 		.ascii	"short unsigned int\000"
  1080      7420756E 
  1080      7369676E 
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 22
-
-
  1080      65642069 
  1080      6E7400
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 22
+
+
  1081              	.LASF28:
  1082 016d 49544D5F 		.ascii	"ITM_RxBuffer\000"
  1082      52784275 
@@ -1318,11 +1316,11 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 1
  1107              	.LASF7:
  1108 01f8 6C6F6E67 		.ascii	"long int\000"
  1108      20696E74 
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccZ6Wo6B.s 			page 23
-
-
  1108      00
  1109              	.LASF16:
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccSC5lyd.s 			page 23
+
+
  1110 0201 6C6F6E67 		.ascii	"long double\000"
  1110      20646F75 
  1110      626C6500 

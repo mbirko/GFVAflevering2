@@ -1,5 +1,5 @@
--- Project:   C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj
--- Generated: 09/29/2021 09:34:44
+-- Project:   G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj
+-- Generated: 09/28/2021 13:37:54
 -- PSoC Creator  4.4
 
 ENTITY Opgave1_I2C IS

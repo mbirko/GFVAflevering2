@@ -10,4 +10,22 @@
  * ========================================
 */
 
+#ifndef LM75_H
+#define LM75_H
+    
+    #include <stdint.h>
+    #include <stdbool.h>
+    
+    
+    enum {LM75_1 = 0x48, LM75_2 = 0x49};
+    
+    bool getTemp(int16_t *temp, uint8_t slaveAddress);
+    
+    float convertToCeltius(int16_t temp);
+    
+    
+    
+    
+#endif
+
 /* [] END OF FILE */

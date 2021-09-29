@@ -276,9 +276,9 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="132773744868641709" />
+<deps_time v="132773750315294454" />
 <top_block v="TopDesign" />
-<last_generation v="4" />
+<last_generation v="6" />
 <pdl_path v="" />
 <sw_packages />
 </CyGuid_925cc1e1-309e-4e08-b0a1-09a83c35b157>
@@ -289,6 +289,110 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM3\ARM_GCC_541\Debug\LM75.o">
+<dep name=".\Generated_Source\PSoC5\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\I2C_M.h" />
+<dep name=".\Generated_Source\PSoC5\I2C_M_PVT.h" />
+<dep name=".\Generated_Source\PSoC5\RST_1.h" />
+<dep name=".\Generated_Source\PSoC5\RST_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SCL_M.h" />
+<dep name=".\Generated_Source\PSoC5\SCL_M_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SDA_M.h" />
+<dep name=".\Generated_Source\PSoC5\SDA_M_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\UART_CT.h" />
+<dep name=".\Generated_Source\PSoC5\UART_CT_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\isr_UART_CT.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\CustomPrint.h" />
+<dep name=".\LM75.c" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_1.h" />
+<file name=".\Generated_Source\PSoC5\CyDmac.h" />
+<file name=".\Generated_Source\PSoC5\CyFlash.h" />
+<file name=".\Generated_Source\PSoC5\CyLib.h" />
+<file name=".\Generated_Source\PSoC5\CySpc.h" />
+<file name=".\Generated_Source\PSoC5\I2C_M.h" />
+<file name=".\Generated_Source\PSoC5\I2C_M_PVT.h" />
+<file name=".\Generated_Source\PSoC5\RST_1.h" />
+<file name=".\Generated_Source\PSoC5\RST_1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\SCL_M.h" />
+<file name=".\Generated_Source\PSoC5\SCL_M_aliases.h" />
+<file name=".\Generated_Source\PSoC5\SDA_M.h" />
+<file name=".\Generated_Source\PSoC5\SDA_M_aliases.h" />
+<file name=".\Generated_Source\PSoC5\UART_CT.h" />
+<file name=".\Generated_Source\PSoC5\UART_CT_IntClock.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<file name=".\Generated_Source\PSoC5\cyPm.h" />
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<file name=".\Generated_Source\PSoC5\cydevice.h" />
+<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<file name=".\Generated_Source\PSoC5\cypins.h" />
+<file name=".\Generated_Source\PSoC5\cytypes.h" />
+<file name=".\Generated_Source\PSoC5\isr_UART_CT.h" />
+<file name=".\Generated_Source\PSoC5\project.h" />
+<file name=".\CustomPrint.h" />
+<file name=".\LM75.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
+<dep name=".\Generated_Source\PSoC5\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\I2C_M.h" />
+<dep name=".\Generated_Source\PSoC5\I2C_M_PVT.h" />
+<dep name=".\Generated_Source\PSoC5\RST_1.h" />
+<dep name=".\Generated_Source\PSoC5\RST_1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SCL_M.h" />
+<dep name=".\Generated_Source\PSoC5\SCL_M_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\SDA_M.h" />
+<dep name=".\Generated_Source\PSoC5\SDA_M_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\UART_CT.h" />
+<dep name=".\Generated_Source\PSoC5\UART_CT_IntClock.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\isr_UART_CT.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\CustomPrint.h" />
+<dep name=".\main.c" />
+</file>
+<file name=".\main.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CustomPrint.o">
 <dep name=".\Generated_Source\PSoC5\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -324,39 +428,7 @@
 <dep name=".\CustomPrint.c" />
 <dep name=".\CustomPrint.h" />
 </file>
-<file name=".\Generated_Source\PSoC5\Clock_1.h" />
-<file name=".\Generated_Source\PSoC5\CyDmac.h" />
-<file name=".\Generated_Source\PSoC5\CyFlash.h" />
-<file name=".\Generated_Source\PSoC5\CyLib.h" />
-<file name=".\Generated_Source\PSoC5\CySpc.h" />
-<file name=".\Generated_Source\PSoC5\I2C_M.h" />
-<file name=".\Generated_Source\PSoC5\I2C_M_PVT.h" />
-<file name=".\Generated_Source\PSoC5\RST_1.h" />
-<file name=".\Generated_Source\PSoC5\RST_1_aliases.h" />
-<file name=".\Generated_Source\PSoC5\SCL_M.h" />
-<file name=".\Generated_Source\PSoC5\SCL_M_aliases.h" />
-<file name=".\Generated_Source\PSoC5\SDA_M.h" />
-<file name=".\Generated_Source\PSoC5\SDA_M_aliases.h" />
-<file name=".\Generated_Source\PSoC5\UART_CT.h" />
-<file name=".\Generated_Source\PSoC5\UART_CT_IntClock.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<file name=".\Generated_Source\PSoC5\cyPm.h" />
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<file name=".\Generated_Source\PSoC5\cydevice.h" />
-<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC5\cypins.h" />
-<file name=".\Generated_Source\PSoC5\cytypes.h" />
-<file name=".\Generated_Source\PSoC5\isr_UART_CT.h" />
-<file name=".\Generated_Source\PSoC5\project.h" />
 <file name=".\CustomPrint.c" />
-<file name=".\CustomPrint.h" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Clock_1.o">
 <dep name=".\Generated_Source\PSoC5\Clock_1.h" />
 <dep name=".\Generated_Source\PSoC5\cydevice.h" />
@@ -678,42 +750,6 @@
 <dep name=".\cyapicallbacks.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\isr_UART_CT.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
-<dep name=".\Generated_Source\PSoC5\Clock_1.h" />
-<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\I2C_M.h" />
-<dep name=".\Generated_Source\PSoC5\I2C_M_PVT.h" />
-<dep name=".\Generated_Source\PSoC5\RST_1.h" />
-<dep name=".\Generated_Source\PSoC5\RST_1_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SCL_M.h" />
-<dep name=".\Generated_Source\PSoC5\SCL_M_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\SDA_M.h" />
-<dep name=".\Generated_Source\PSoC5\SDA_M_aliases.h" />
-<dep name=".\Generated_Source\PSoC5\UART_CT.h" />
-<dep name=".\Generated_Source\PSoC5\UART_CT_IntClock.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
-<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC5\cypins.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-<dep name=".\Generated_Source\PSoC5\isr_UART_CT.h" />
-<dep name=".\Generated_Source\PSoC5\project.h" />
-<dep name=".\CustomPrint.h" />
-<dep name=".\main.c" />
-</file>
-<file name=".\main.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o">
 <dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
 <dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
@@ -735,6 +771,7 @@
 <file name=".\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.hex">
 <dep name=".\CortexM3\ARM_GCC_541\Debug\main.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CustomPrint.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\LM75.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cymetadata.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o" />
@@ -804,7 +841,8 @@
 <name_val_pair name="Generated_Source\PSoC5\I2C_M_PM.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\I2C_M_SLAVE.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\I2C_M_MASTER.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
-<name_val_pair name="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.hex" v="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -u _printf_float -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.hex" v="-mcpu=cortex-m3 -mthumb -L Generated_Source\PSoC5 -Wl,-Map,${OutputDir}/${ProjectShortName}.map -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects" />
+<name_val_pair name="LM75.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\mathias\AppData\Local\Cypress Semiconductor\PSoC Creator\4.4&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj -d CY8C5888LTI-LP097 -s C:\Users\mathias\Documents\Uni\2sem\GFV\Aflevering2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -813,7 +851,7 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="132773744937412584" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="132773756847828868" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>

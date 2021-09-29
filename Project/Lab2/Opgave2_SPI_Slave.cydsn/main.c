@@ -28,7 +28,14 @@ int main(void)
     
     for(;;)
     {
-        
+        if (DataReceived == 'l')
+        {
+             Pin_LED1_Write(1);
+        }
+        if (DataReceived == 'o')
+        {
+             Pin_LED1_Write(0);
+        }
     }
 }
 

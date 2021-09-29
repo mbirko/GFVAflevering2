@@ -1,6 +1,6 @@
 // ======================================================================
 // Opgave2_SPI_Master.v generated from TopDesign.cysch
-// 09/29/2021 at 14:48
+// 09/29/2021 at 15:49
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -389,7 +389,6 @@ module top ;
           wire  Net_22;
           wire  Net_27;
           wire  Net_21;
-          wire  Net_20;
           wire  Net_19;
           wire  Net_32;
           wire  Net_13;
@@ -405,6 +404,7 @@ module top ;
           wire  Net_3;
           wire  Net_2;
           wire  Net_1;
+          wire  Net_34;
           wire  Net_17;
           wire  Net_26;
           wire  Net_24;
@@ -597,7 +597,7 @@ module top ;
         .miso(Net_17),
         .mosi(Net_24),
         .reset(1'b0),
-        .rx_interrupt(Net_20),
+        .rx_interrupt(Net_34),
         .sclk(Net_26),
         .sdat(Net_21),
         .ss(Net_27),
@@ -830,6 +830,13 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__Pin_SClk_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		isr_SPI_rx
+		 (.int_signal(Net_34));
+
 
 
 

@@ -1,6 +1,6 @@
 -- ======================================================================
 -- Opgave2_SPI_Slave.ctl generated from Opgave2_SPI_Slave
--- 09/29/2021 at 14:22
+-- 09/29/2021 at 15:46
 -- This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 -- ======================================================================
 

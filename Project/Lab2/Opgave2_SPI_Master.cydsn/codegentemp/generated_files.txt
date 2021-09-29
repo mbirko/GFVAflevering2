@@ -39,6 +39,8 @@
   <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\Pin_SClk_aliases.h" value="HEADER;;;;;Pin_SClk" />
   <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\Pin_SClk.c" value="SOURCE_C;CortexM3;;;;Pin_SClk" />
   <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\Pin_SClk.h" value="HEADER;;;;;Pin_SClk" />
+  <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\isr_SPI_rx.c" value="SOURCE_C;CortexM3;;;;isr_SPI_rx" />
+  <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\isr_SPI_rx.h" value="HEADER;;;;;isr_SPI_rx" />
   <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\UART_CT_IntClock.c" value="SOURCE_C;CortexM3;;;;UART_CT_IntClock" />
   <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\UART_CT_IntClock.h" value="HEADER;;;;;UART_CT_IntClock" />
   <file name="G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\codegentemp\SPI_M_IntClock.c" value="SOURCE_C;CortexM3;;;;SPI_M_IntClock" />

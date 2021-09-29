@@ -29,6 +29,7 @@
 #include "Pin_MOSI.h"
 #include "Pin_SClk_aliases.h"
 #include "Pin_SClk.h"
+#include "isr_SPI_rx.h"
 #include "UART_CT_IntClock.h"
 #include "SPI_M_IntClock.h"
 #include "core_cm3_psoc5.h"

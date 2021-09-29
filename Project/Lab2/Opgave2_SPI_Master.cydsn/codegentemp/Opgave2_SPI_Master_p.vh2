@@ -1,5 +1,5 @@
 -- Project:   Opgave2_SPI_Master
--- Generated: 09/29/2021 14:48:28
+-- Generated: 09/29/2021 15:49:24
 -- PSoC Creator  4.4
 
 ENTITY Opgave2_SPI_Master IS
@@ -33,10 +33,10 @@ ARCHITECTURE __DEFAULT__ OF Opgave2_SPI_Master IS
     SIGNAL ClockBlock_XTAL : bit;
     SIGNAL ClockBlock_XTAL_32KHZ : bit;
     SIGNAL Net_17 : bit;
-    SIGNAL Net_20 : bit;
     SIGNAL Net_24 : bit;
     SIGNAL Net_26 : bit;
     SIGNAL Net_27 : bit;
+    SIGNAL Net_34 : bit;
     SIGNAL Net_5 : bit;
     SIGNAL Net_8 : bit;
     SIGNAL Net_9 : bit;
@@ -1284,7 +1284,7 @@ BEGIN
             int_type => "10",
             is_nmi => 0)
         PORT MAP(
-            interrupt => Net_20,
+            interrupt => Net_34,
             clock => ClockBlock_BUS_CLK);
 
     \SPI_M:BSPIM:BitCounter\:count7cell
@@ -1342,7 +1342,7 @@ BEGIN
             status_2 => open,
             status_1 => open,
             status_0 => open,
-            interrupt => Net_20);
+            interrupt => Net_34);
 
     \SPI_M:BSPIM:sR8:Dp:u0\:datapathcell
         GENERIC MAP(
@@ -1384,6 +1384,14 @@ BEGIN
             f1_bus_stat_comb => \SPI_M:BSPIM:rx_status_5\,
             f1_blk_stat_comb => \SPI_M:BSPIM:rx_status_4\,
             busclk => ClockBlock_BUS_CLK);
+
+    isr_SPI_rx:interrupt
+        GENERIC MAP(
+            int_type => "10",
+            is_nmi => 0)
+        PORT MAP(
+            interrupt => Net_34,
+            clock => ClockBlock_BUS_CLK);
 
     \UART_CT:BUART:txn\:macrocell
         GENERIC MAP(

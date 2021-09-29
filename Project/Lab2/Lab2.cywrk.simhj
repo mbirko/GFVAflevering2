@@ -202,6 +202,7 @@
 <v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_SPI_rx.lst</v>
 <v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART_CT.lst</v>
 <v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
 <v>Lab2\Opgave2_SPI_Master\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_MISO.lst</v>
@@ -339,7 +340,8 @@
 <v>Lab2\Opgave2_SPI_Master\CY8C58LP Family Datasheet</v>
 <v>Lab2\Opgave2_SPI_Master\System Reference Guides</v>
 <v>Lab2\Opgave2_SPI_Master\System Reference Guides\cy_boot_v6_0</v>
-<v>Lab2\Opgave2_SPI_Master\cy_isr_v1_70.pdf</v>
+<v>Lab2\Opgave2_SPI_Master\cy_isr_v1_70</v>
+<v>Lab2\Opgave2_SPI_Master\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Lab2\Opgave2_SPI_Master\cy_pins_v2_20</v>
 <v>Lab2\Opgave2_SPI_Master\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Lab2\Opgave2_SPI_Master\SPI_Master_v2_50.pdf</v>
@@ -375,7 +377,8 @@
 <v>Lab2\Opgave2_SPI_Master\CY8C58LP Family Datasheet</v>
 <v>Lab2\Opgave2_SPI_Master\System Reference Guides</v>
 <v>Lab2\Opgave2_SPI_Master\System Reference Guides\cy_boot_v6_0</v>
-<v>Lab2\Opgave2_SPI_Master\cy_isr_v1_70.pdf</v>
+<v>Lab2\Opgave2_SPI_Master\cy_isr_v1_70</v>
+<v>Lab2\Opgave2_SPI_Master\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
 <v>Lab2\Opgave2_SPI_Master\cy_pins_v2_20</v>
 <v>Lab2\Opgave2_SPI_Master\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
 <v>Lab2\Opgave2_SPI_Master\SPI_Master_v2_50.pdf</v>

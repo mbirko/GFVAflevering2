@@ -2,7 +2,7 @@
 --	Conversion of Opgave2_SPI_Master.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Sep 29 14:48:25 2021
+--	Wed Sep 29 15:49:20 2021
 --
 
 USE cypress.cypress.all;
@@ -363,7 +363,7 @@ TERMINAL tmpSIOVREF__Tx_CT_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Tx_CT_net_0 : bit;
 SIGNAL \SPI_M:Net_276\ : bit;
 SIGNAL \SPI_M:Net_288\ : bit;
-SIGNAL Net_20 : bit;
+SIGNAL Net_34 : bit;
 SIGNAL \SPI_M:BSPIM:clk_fin\ : bit;
 SIGNAL \SPI_M:BSPIM:load_rx_data\ : bit;
 SIGNAL \SPI_M:BSPIM:dpcounter_one\ : bit;
@@ -1189,7 +1189,7 @@ isr_UART_CT:cy_isr_v1_0
 \SPI_M:RxInternalInterrupt\:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_20);
+	PORT MAP(int_signal=>Net_34);
 \SPI_M:BSPIM:ClkEn\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>\SPI_M:Net_276\,
@@ -1225,7 +1225,7 @@ isr_UART_CT:cy_isr_v1_0
 		clock=>\SPI_M:BSPIM:clk_fin\,
 		status=>(\SPI_M:BSPIM:rx_status_6\, \SPI_M:BSPIM:rx_status_5\, \SPI_M:BSPIM:rx_status_4\, zero,
 			zero, zero, zero),
-		interrupt=>Net_20);
+		interrupt=>Net_34);
 \SPI_M:BSPIM:sR8:Dp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000000000000000000001100000000000001010000000001000100010000000000011100000000010001000000000000000101000000000000010100000011111111000000001111111111111111000000000010001000001000111100000000000000000100",
 		d0_init=>"00000000",
@@ -1522,6 +1522,10 @@ Pin_SClk:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__Pin_SClk_net_0);
+isr_SPI_rx:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_34);
 \UART_CT:BUART:reset_reg\:cy_dff
 	PORT MAP(d=>zero,
 		clk=>\UART_CT:BUART:clock_op\,

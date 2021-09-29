@@ -1,5 +1,5 @@
 # Opgave2_SPI_Slave
-# 2021-09-29 12:22:50Z
+# 2021-09-29 13:46:40Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0

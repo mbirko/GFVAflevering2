@@ -1,6 +1,6 @@
 // ======================================================================
 // Opgave2_SPI_Slave.v generated from TopDesign.cysch
-// 09/29/2021 at 14:22
+// 09/29/2021 at 15:46
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -399,7 +399,6 @@ module top ;
           wire  Net_21;
           wire  Net_20;
           wire  Net_19;
-          wire  Net_15;
           wire  Net_6;
           wire  Net_7;
           wire  Net_10;
@@ -649,6 +648,7 @@ module top ;
 	assign tmpOE__Pin_MISO_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__Pin_SW1_net;
+	wire [0:0] tmpFB_0__Pin_SW1_net;
 	wire [0:0] tmpIO_0__Pin_SW1_net;
 	wire [0:0] tmpINTERRUPT_0__Pin_SW1_net;
 	electrical [0:0] tmpSIOVREF__Pin_SW1_net;
@@ -709,7 +709,7 @@ module top ;
 		Pin_SW1
 		 (.oe(tmpOE__Pin_SW1_net),
 		  .y({1'b0}),
-		  .fb({Net_15}),
+		  .fb({tmpFB_0__Pin_SW1_net[0:0]}),
 		  .io({tmpIO_0__Pin_SW1_net[0:0]}),
 		  .siovref(tmpSIOVREF__Pin_SW1_net),
 		  .interrupt({tmpINTERRUPT_0__Pin_SW1_net[0:0]}),

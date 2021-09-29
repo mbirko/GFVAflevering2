@@ -1,5 +1,5 @@
 -- Project:   Opgave2_SPI_Slave
--- Generated: 09/29/2021 14:22:46
+-- Generated: 09/29/2021 15:46:36
 -- PSoC Creator  4.4
 
 ENTITY Opgave2_SPI_Slave IS

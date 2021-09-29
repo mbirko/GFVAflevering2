@@ -36,6 +36,16 @@ int main(void)
         {
              Pin_LED1_Write(0);
         }
+        
+        if (!Pin_SW1_Read())
+        {
+             UART_CT_PutString("ButtonPressed\r\n");
+        }
+        if (Pin_SW1_Read())
+        {
+             UART_CT_PutString("ButtonNOTPressed\r\n");
+        }
+        CyDelay(1000);
     }
 }
 
@@ -44,13 +54,7 @@ CY_ISR (SPI_Rx_Handler)
     DataReceived = SPI_S_ReadRxData();
     UART_CT_PutChar(DataReceived);
     
-    /*
-    UART_CT_PutString("DATA RECEIVED!");
-    if (DataReceived == 'l')
-    {
-        Pin_LED1_Write(1);
-    }
-    */
+    
 }
 
 

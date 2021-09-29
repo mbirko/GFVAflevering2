@@ -2,7 +2,7 @@
 --	Conversion of Opgave2_SPI_Slave.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Sep 29 14:22:43 2021
+--	Wed Sep 29 15:46:32 2021
 --
 
 USE cypress.cypress.all;
@@ -153,7 +153,7 @@ SIGNAL tmpIO_0__Pin_MISO_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_MISO_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_MISO_net_0 : bit;
 SIGNAL tmpOE__Pin_SW1_net_0 : bit;
-SIGNAL Net_15 : bit;
+SIGNAL tmpFB_0__Pin_SW1_net_0 : bit;
 SIGNAL tmpIO_0__Pin_SW1_net_0 : bit;
 TERMINAL tmpSIOVREF__Pin_SW1_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Pin_SW1_net_0 : bit;
@@ -1101,7 +1101,7 @@ Pin_SW1:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>(Net_3),
-		fb=>Net_15,
+		fb=>(tmpFB_0__Pin_SW1_net_0),
 		analog=>(open),
 		io=>(tmpIO_0__Pin_SW1_net_0),
 		siovref=>(tmpSIOVREF__Pin_SW1_net_0),

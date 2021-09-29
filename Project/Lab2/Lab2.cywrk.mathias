@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab2\Opgave1_I2C\Source Files\LM75.c">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Lab2\Opgave1_I2C\Header Files\LM75.h">
 <ExpandedNodeIds>
 <v>Lab2</v>
 <v>Lab2\Opgave1_I2C</v>
@@ -154,6 +154,44 @@
 <VisibleNodeIds>
 <v>Lab2</v>
 <v>Lab2\Opgave1_I2C</v>
+<v>Lab2\Opgave1_I2C\CortexM3</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CustomPrint.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_BOOT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_INT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_MASTER.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_PM.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\I2C_M_SLAVE.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\isr_UART_CT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\LM75.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\RST_1.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\SCL_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\SDA_M.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_BOOT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_INT.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_IntClock.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_CT_PM.lst</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.elf</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.hex</v>
+<v>Lab2\Opgave1_I2C\CortexM3\ARM_GCC_541\Debug\Opgave1_I2C.map</v>
+<v>Lab2\Opgave1_I2C\Opgave1_I2C.gpdsc</v>
 <v>Lab2\Opgave1_I2C\Opgave1_I2C.rpt</v>
 <v>Lab2\Opgave1_I2C\Opgave1_I2C_timing.html</v>
 </VisibleNodeIds>

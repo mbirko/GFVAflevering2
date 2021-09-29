@@ -1,0 +1,8 @@
+G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave1_I2C.cydsn\Opgave1_I2C.cyprj|a216f165-9e6f-4ff0-9a05-08614064b3e9
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|5273b72c-2d93-41b4-9c85-0d32ba299839
+C:\Users\simhj\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|e670b077-471f-4874-a9ee-e62a0a6ef8f4
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|d62df367-c131-4828-9026-cc437510539f
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ea03328b-0a94-4152-a0af-f735026b727e
+S:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|2206aa89-c765-44d2-9379-eb3c155bf4e0
+G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Slave.cydsn\Opgave2_SPI_Slave.cyprj|8e445280-b6fa-4800-90a3-119a5b70ff08
+G:\My Drive\AU\SW\2semester\GFV\210929 ComBusses pt2\GFVAflevering2\Project\Lab2\Opgave2_SPI_Master.cydsn\Opgave2_SPI_Master.cyprj|16b7b96f-3a0f-4aab-a323-d94af53c7acd

@@ -1,0 +1,78 @@
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/CortexM3/ARM_GCC_541/Debug/main.o : G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CyDmac.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CyFlash.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CyLib.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CySpc.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_LED1.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_LED1_aliases.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MISO.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MISO_aliases.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MOSI.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MOSI_aliases.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SClk.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SClk_aliases.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SW1.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SW1_aliases.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/SPI_S.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/SPI_S_IntClock.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/SPI_S_PVT.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/UART_CT.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/UART_CT_IntClock.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cmsis_armcc.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cmsis_compiler.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cmsis_gcc.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/core_cm3.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cyPm.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cydevice.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cydevice_trm.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cydisabledsheets.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cyfitter.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cypins.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cytypes.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/isr_SPI_rx.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/isr_UART_CT.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/project.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/CustomPrint.h G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/main.c 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CyDmac.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CyFlash.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CyLib.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/CySpc.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_LED1.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_LED1_aliases.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MISO.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MISO_aliases.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MOSI.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_MOSI_aliases.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SClk.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SClk_aliases.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SW1.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/Pin_SW1_aliases.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/SPI_S.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/SPI_S_IntClock.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/SPI_S_PVT.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/UART_CT.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/UART_CT_IntClock.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cmsis_armcc.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cmsis_compiler.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cmsis_gcc.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/core_cm3.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/core_cm3_psoc5.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cyPm.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cy_em_eeprom.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cydevice.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cydevice_trm.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cydisabledsheets.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cyfitter.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cyfitter_cfg.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cypins.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/cytypes.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/isr_SPI_rx.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/isr_UART_CT.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/Generated_Source/PSoC5/project.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/CustomPrint.h : 
+
+G:/My\ Drive/AU/SW/2semester/GFV/210929\ ComBusses\ pt2/GFVAflevering2/Project/Lab2/Opgave2_SPI_Slave.cydsn/main.c : 
+

@@ -1,0 +1,64 @@
+dont_use_io iocell 1 0
+dont_use_io iocell 1 1
+dont_use_io iocell 1 3
+set_location "\SPI_S:BSPIS:mosi_tmp\" macrocell 2 1 1 2
+set_location "\UART_CT:BUART:tx_status_0\" macrocell 3 3 0 1
+set_location "\UART_CT:BUART:tx_ctrl_mark_last\" macrocell 2 1 0 3
+set_location "\SPI_S:BSPIS:rx_status_4\" macrocell 2 3 0 3
+set_location "\UART_CT:BUART:rx_postpoll\" macrocell 2 1 1 1
+set_location "\UART_CT:BUART:sRX:RxShifter:u0\" datapathcell 2 1 2 
+set_location "\UART_CT:BUART:tx_bitclk\" macrocell 2 3 1 1
+set_location "\UART_CT:BUART:sTX:TxSts\" statusicell 3 3 4 
+set_location "\UART_CT:BUART:txn\" macrocell 2 3 1 0
+set_location "\UART_CT:BUART:sRX:RxBitCounter\" count7cell 3 0 7 
+set_location "\SPI_S:BSPIS:mosi_buf_overrun_fin\" macrocell 2 2 0 1
+set_location "\SPI_S:BSPIS:tx_load\" macrocell 2 2 0 3
+set_location "\SPI_S:BSPIS:dpcounter_one_reg\" macrocell 3 2 0 1
+set_location "\UART_CT:BUART:tx_status_2\" macrocell 3 3 1 3
+set_location "Net_27" macrocell 2 2 0 2
+set_location "\UART_CT:BUART:tx_state_2\" macrocell 2 3 0 0
+set_location "\UART_CT:BUART:sRX:RxSts\" statusicell 2 0 4 
+set_location "\UART_CT:BUART:pollcount_0\" macrocell 2 2 1 0
+set_location "\SPI_S:BSPIS:sR8:Dp:u0\" datapathcell 2 2 2 
+set_location "\UART_CT:BUART:rx_state_0\" macrocell 3 0 1 2
+set_location "\SPI_S:BSPIS:rx_buf_overrun\" macrocell 2 3 0 1
+set_location "\UART_CT:BUART:rx_counter_load\" macrocell 3 0 1 1
+set_location "\UART_CT:BUART:pollcount_1\" macrocell 2 0 1 2
+set_location "\UART_CT:BUART:rx_bitclk_enable\" macrocell 2 0 0 0
+set_location "\UART_CT:BUART:rx_load_fifo\" macrocell 3 1 0 3
+set_location "\SPI_S:BSPIS:RxStsReg\" statusicell 2 3 4 
+set_location "\UART_CT:BUART:tx_state_1\" macrocell 3 3 0 2
+set_location "\UART_CT:BUART:rx_state_2\" macrocell 3 0 1 0
+set_location "\SPI_S:BSPIS:tx_status_0\" macrocell 3 2 0 0
+set_location "\UART_CT:BUART:tx_state_0\" macrocell 3 3 0 0
+set_location "\SPI_S:BSPIS:mosi_buf_overrun\" macrocell 2 2 0 0
+set_location "\SPI_S:BSPIS:BitCounter\" count7cell 2 1 7 
+set_location "\UART_CT:BUART:rx_status_3\" macrocell 3 0 0 2
+set_location "\UART_CT:BUART:rx_state_stop1_reg\" macrocell 3 1 1 0
+set_location "\UART_CT:BUART:counter_load_not\" macrocell 3 2 1 1
+set_location "\SPI_S:BSPIS:byte_complete\" macrocell 3 2 0 2
+set_location "\UART_CT:BUART:sTX:TxShifter:u0\" datapathcell 3 3 2 
+set_location "\UART_CT:BUART:rx_status_4\" macrocell 2 1 0 1
+set_location "\UART_CT:BUART:rx_last\" macrocell 2 2 1 1
+set_location "\UART_CT:BUART:sTX:sCLOCK:TxBitClkGen\" datapathcell 3 1 2 
+set_location "\UART_CT:BUART:rx_state_3\" macrocell 3 0 0 0
+set_location "\SPI_S:BSPIS:TxStsReg\" statusicell 3 2 4 
+set_location "__ONE__" macrocell 0 0 1 0
+set_location "\SPI_S:BSPIS:mosi_to_dp\" macrocell 2 1 1 0
+set_location "\UART_CT:BUART:rx_status_5\" macrocell 2 1 0 2
+set_location "\SPI_S:BSPIS:sync_4\" synccell 2 2 5 0
+set_io "Pin_SClk(0)" iocell 2 5
+set_location "ClockBlock" clockblockcell -1 -1 0
+# Note: port 12 is the logical name for port 7
+set_io "Tx_CT(0)" iocell 12 7
+set_io "Pin_MOSI(0)" iocell 2 3
+set_location "\SPI_S:BSPIS:sync_3\" synccell 2 2 5 1
+set_location "\SPI_S:BSPIS:sync_1\" synccell 2 2 5 2
+set_location "\SPI_S:BSPIS:sync_2\" synccell 2 2 5 3
+set_io "Pin_MISO(0)" iocell 2 4
+set_location "isr_SPI_rx" interrupt -1 -1 0
+set_location "isr_UART_CT" interrupt -1 -1 1
+set_io "Pin_LED1(0)" iocell 2 1
+# Note: port 12 is the logical name for port 7
+set_io "Rx_CT(0)" iocell 12 6
+set_io "Pin_SW1(0)" iocell 2 2

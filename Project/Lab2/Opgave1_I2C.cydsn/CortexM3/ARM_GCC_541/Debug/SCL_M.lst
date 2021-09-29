@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 1
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 1
 
 
    1              		.syntax unified
@@ -62,11 +58,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
   28:Generated_Source\PSoC5/SCL_M.c **** *
   29:Generated_Source\PSoC5/SCL_M.c **** * \brief Writes the value to the physical port (data output register), masking
   30:Generated_Source\PSoC5/SCL_M.c **** *  and shifting the bits appropriately. 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 2
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 2
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 2
 
 
   31:Generated_Source\PSoC5/SCL_M.c **** *
@@ -126,11 +118,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
   52              		.section	.text.SCL_M_SetDriveMode,"ax",%progbits
   53              		.align	2
   54              		.global	SCL_M_SetDriveMode
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 3
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 3
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 3
 
 
   55              		.thumb
@@ -190,11 +178,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
   77              	.L5:
   78 0014 60500040 		.word	1073762400
   79              		.cfi_endproc
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 4
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 4
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 4
 
 
   80              	.LFE1:
@@ -254,11 +238,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  110              		.global	SCL_M_ReadDataReg
  111              		.thumb
  112              		.thumb_func
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 5
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 5
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 5
 
 
  113              		.type	SCL_M_ReadDataReg, %function
@@ -318,11 +298,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  139 0000 1B010000 		.4byte	0x11b
  140 0004 0400     		.2byte	0x4
  141 0006 00000000 		.4byte	.Ldebug_abbrev0
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 6
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 6
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 6
 
 
  142 000a 04       		.byte	0x4
@@ -382,11 +358,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  196 0077 02       		.uleb128 0x2
  197 0078 04       		.byte	0x4
  198 0079 04       		.byte	0x4
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 7
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 7
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 7
 
 
  199 007a 92000000 		.4byte	.LASF9
@@ -446,11 +418,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  253 00f3 00       		.byte	0
  254 00f4 09       		.uleb128 0x9
  255 00f5 D9010000 		.4byte	.LASF18
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 8
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 8
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 8
 
 
  256 00f9 01       		.byte	0x1
@@ -510,11 +478,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  310 0023 3E       		.uleb128 0x3e
  311 0024 0B       		.uleb128 0xb
  312 0025 03       		.uleb128 0x3
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 9
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 9
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 9
 
 
  313 0026 08       		.uleb128 0x8
@@ -574,11 +538,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  367 005d 0B       		.uleb128 0xb
  368 005e 3B       		.uleb128 0x3b
  369 005f 0B       		.uleb128 0xb
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 10
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 10
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 10
 
 
  370 0060 49       		.uleb128 0x49
@@ -638,11 +598,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  424 000b 0C000000 		.4byte	.LVL2
  425 000f 18000000 		.4byte	.LFE0
  426 0013 0400     		.2byte	0x4
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 11
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 11
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 11
 
 
  427 0015 F3       		.byte	0xf3
@@ -702,11 +658,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  479      00000201 
  479      FB0E0D00 
  479      01010101 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 12
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 12
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 12
 
 
  480              	.LASF21:
@@ -766,11 +718,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  501 0139 6C6F6E67 		.ascii	"long unsigned int\000"
  501      20756E73 
  501      69676E65 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 13
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 13
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 13
 
 
  501      6420696E 
@@ -830,11 +778,7 @@ ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 1
  526              	.LASF18:
  527 01d9 53434C5F 		.ascii	"SCL_M_Read\000"
  527      4D5F5265 
-<<<<<<< Updated upstream
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccEJ57DR.s 			page 14
-=======
-ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccuhoOl9.s 			page 14
->>>>>>> Stashed changes
+ARM GAS  C:\Users\mathias\AppData\Local\Temp\ccdMsewC.s 			page 14
 
 
  527      616400
